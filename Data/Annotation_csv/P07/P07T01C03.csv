@@ -1,0 +1,13 @@
+event,start_frame,end_frame
+Enter,6246,6265
+Walk,6253,6330
+Use_fridge,6336,6392
+Drink.From_bottle,6447,6623
+Use_fridge,6639,6699
+Walk,6715,6789
+Leave,6774,6797
+Enter,10836,10853
+Walk,10839,10896
+Use_laptop,10934,11794
+Walk,11804,11863
+Leave,11848,11871

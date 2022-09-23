@@ -1,0 +1,4 @@
+event,start_frame,end_frame
+Enter,16777,16917
+Walk,16900,16965
+Leave,16935,16993

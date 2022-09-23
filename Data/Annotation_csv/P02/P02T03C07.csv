@@ -1,0 +1,7 @@
+event,start_frame,end_frame
+Enter,76,79
+Walk,79,114
+Leave,177,184
+Enter,422,428
+Walk,554,599
+Leave,597,602

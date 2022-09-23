@@ -1,0 +1,12 @@
+event,start_frame,end_frame
+Get_up,30,74
+Walk,103,285
+Put_something_on_table,285,305
+Sit_down,314,376
+Use_laptop,406,7944
+Get_up,8035,8086
+Take_something_off_table,8050,8076
+Walk,8098,8379
+Sit_down,8380,8431
+Read,8443,18692
+Put_something_on_table,9110,9134

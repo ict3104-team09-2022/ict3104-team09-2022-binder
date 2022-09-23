@@ -1,0 +1,17 @@
+event,start_frame,end_frame
+Enter,689,822
+Walk,706,841
+Sit_down,841,874
+Use_laptop,877,2006
+Get_up,2008,2065
+Use_Drawer,5318,6443
+Use_Drawer,6613,6978
+Sit_down,8687,8717
+Use_laptop,8721,12360
+Get_up,12371,12403
+Walk,12461,12518
+Leave,12495,12529
+Enter,12672,12713
+Walk,12680,12728
+Sit_down,12731,12744
+Get_up,19768,19796

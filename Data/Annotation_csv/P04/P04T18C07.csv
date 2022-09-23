@@ -1,0 +1,9 @@
+event,start_frame,end_frame
+Cook.Use_stove,1704,1717
+Cook.Use_stove,1704,1717
+Take_something_off_table,1706,1716
+Use_Drawer,4124,4198
+Use_Drawer,6124,6314
+Use_Drawer,8342,8400
+Use_Drawer,8487,8813
+Use_Drawer,8856,8976

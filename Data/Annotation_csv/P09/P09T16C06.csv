@@ -1,0 +1,16 @@
+event,start_frame,end_frame
+Take_something_off_table,36,53
+Make_tea.Boil_water,94,476
+Take_something_off_table,501,514
+Drink.From_cup,509,559
+Walk,555,648
+Put_something_on_table,639,654
+Write,640,13460
+Take_something_off_table,13520,13535
+Walk,13532,13614
+Put_something_on_table,13602,13610
+Pour.From_kettle,13686,13826
+Make_tea.Insert_tea_bag,14233,14756
+Take_something_off_table,14835,14844
+Drink.From_cup,14841,14898
+Clean_dishes,14923,15118

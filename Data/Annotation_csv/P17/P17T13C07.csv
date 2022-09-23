@@ -1,0 +1,10 @@
+event,start_frame,end_frame
+Enter,91,185
+Walk,192,229
+Walk,819,845
+Walk,946,972
+Walk,1152,1178
+Walk,1254,1281
+Take_something_off_table,6648,6676
+Walk,7312,7362
+Stir_coffee/tea,7391,7490
