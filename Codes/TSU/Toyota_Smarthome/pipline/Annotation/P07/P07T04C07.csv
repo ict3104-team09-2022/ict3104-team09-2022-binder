@@ -1,0 +1,14 @@
+event,start_frame,end_frame
+Enter,4444,4623
+Leave,6045,6204
+Enter,6980,7037
+Walk,6986,7094
+Leave,7039,7102
+Enter,8267,8324
+Walk,8312,8368
+Leave,8363,8490
+Enter,11328,11359
+Walk,11344,11384
+Leave,11368,11410
+Enter,21413,21509
+Leave,22565,22641

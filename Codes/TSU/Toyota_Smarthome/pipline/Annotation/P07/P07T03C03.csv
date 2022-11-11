@@ -1,0 +1,14 @@
+event,start_frame,end_frame
+Enter,191,217
+Leave,219,247
+Enter,5472,5493
+Walk,5477,5561
+Use_cupboard,5544,5663
+Walk,5678,5771
+Leave,5748,5779
+Enter,12895,12918
+Walk,12898,12979
+Use_cupboard,12957,13147
+Use_Drawer,13001,13107
+Walk,13155,13291
+Leave,13266,13298
