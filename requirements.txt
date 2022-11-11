@@ -1,1 +1,138 @@
-pandas==1.2.4
+absl-py==1.3.0
+argon2-cffi==21.3.0
+argon2-cffi-bindings==21.2.0
+asttokens==2.0.8
+astunparse==1.6.3
+attrs==22.1.0
+av==8.0.2
+backcall==0.2.0
+beautifulsoup4==4.11.1
+bleach==5.0.1
+brotlipy==0.7.0
+cachetools==5.2.0
+certifi @ file:///C:/b/abs_ac29jvt43w/croot/certifi_1665076682579/work/certifi
+cffi @ file:///C:/Windows/Temp/abs_6808y9x40v/croots/recipe/cffi_1659598653989/work
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+colorama==0.4.5
+cryptography @ file:///C:/b/abs_36x9ifdcl4/croot/cryptography_1665612655344/work
+cupy-cuda11x==11.1.0
+debugpy==1.6.3
+decorator==5.1.1
+defusedxml==0.7.1
+entrypoints==0.4
+executing==1.0.0
+fastjsonschema==2.16.2
+fastrlock==0.8
+flatbuffers==22.9.24
+gast==0.4.0
+google-auth==2.13.0
+google-auth-oauthlib==0.4.6
+google-pasta==0.2.0
+grpcio==1.50.0
+h5py==3.7.0
+idna @ file:///C:/b/abs_bdhbebrioa/croot/idna_1666125572046/work
+importlib-metadata==4.12.0
+importlib-resources==5.9.0
+ipykernel==6.15.3
+ipython==8.5.0
+ipython-genutils==0.2.0
+ipywidgets==8.0.2
+jedi==0.18.1
+Jinja2==3.1.2
+joblib==1.2.0
+jsonschema==4.16.0
+jupyter==1.0.0
+jupyter-console==6.4.4
+jupyter-core==4.11.1
+jupyter_client==7.3.5
+jupyterlab-pygments==0.2.2
+jupyterlab-widgets==3.0.3
+keras==2.10.0
+Keras-Preprocessing==1.1.2
+libclang==14.0.6
+lxml==4.9.1
+Markdown==3.4.1
+MarkupSafe==2.1.1
+matplotlib-inline==0.1.6
+mistune==2.0.4
+mkl-fft==1.3.1
+mkl-random @ file:///C:/ci/mkl_random_1626186184278/work
+mkl-service==2.4.0
+nbclient==0.6.8
+nbconvert==7.0.0
+nbformat==5.6.0
+nest-asyncio==1.5.5
+notebook==6.4.12
+numpy @ file:///C:/b/abs_53f_dbvhzc/croot/numpy_and_numpy_base_1665773185489/work
+oauthlib==3.2.2
+omegaconf==2.0.6
+opencv-python==4.4.0.44
+opt-einsum==3.3.0
+packaging==21.3
+pandas==1.5.1
+pandocfilters==1.5.0
+parso==0.8.3
+pickleshare==0.7.5
+Pillow==9.2.0
+pkgutil_resolve_name==1.3.10
+prometheus-client==0.14.1
+prompt-toolkit==3.0.31
+protobuf==3.19.6
+psutil==5.9.2
+pure-eval==0.2.2
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+Pygments==2.13.0
+pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
+pyparsing==3.0.9
+PyQt5==5.15.7
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.11.0
+pyrsistent==0.18.1
+PySocks @ file:///C:/ci/pysocks_1605287845585/work
+python-dateutil==2.8.2
+pytz==2022.6
+pywin32==304
+pywinpty==2.0.8
+PyYAML==6.0
+pyzmq==24.0.1
+qtconsole==5.3.2
+QtPy==2.2.0
+requests @ file:///C:/ci/requests_1657717096906/work
+requests-oauthlib==1.3.1
+rsa==4.9
+scikit-learn==1.1.2
+scipy==1.9.1
+Send2Trash==1.8.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+soupsieve==2.3.2.post1
+stack-data==0.5.0
+tensorboard==2.10.1
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorflow==2.10.0
+tensorflow-estimator==2.10.0
+tensorflow-gpu==2.10.0
+tensorflow-io-gcs-filesystem==0.27.0
+termcolor==2.0.1
+terminado==0.15.0
+threadpoolctl==3.1.0
+timm==0.6.7
+tinycss2==1.1.1
+torch==1.13.0
+torchaudio==0.13.0
+torchvision==0.14.0
+tornado==6.2
+tqdm==4.64.1
+traitlets==5.4.0
+typing_extensions @ file:///C:/Windows/TEMP/abs_dd2d0moa85/croots/recipe/typing_extensions_1659638831135/work
+urllib3 @ file:///C:/b/abs_a8_3vfznn_/croot/urllib3_1666298943664/work
+wcwidth==0.2.5
+webencodings==0.5.1
+Werkzeug==2.2.2
+widgetsnbextension==4.0.3
+win-inet-pton @ file:///C:/ci/win_inet_pton_1605306167264/work
+wincertstore==0.2
+wrapt==1.14.1
+zipp==3.8.1
