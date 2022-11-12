@@ -534,4 +534,3 @@
 ../../../Data/Videos_mp4/P25T16C07.mp4
 ../../../Data/Videos_mp4/P25T17C01.mp4
 ../../../Data/Videos_mp4/P25T17C02.mp4
-../../../Data/Videos_mp4/video_name.txt

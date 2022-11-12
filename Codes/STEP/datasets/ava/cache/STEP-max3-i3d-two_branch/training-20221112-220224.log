@@ -1,0 +1,398 @@
+STEP-max3-i3d-two_branch
+Data agumentation: ConvertFromInts PhotometricDistort ConvertFromInts ToAbsoluteCoords RandomSampleCrop RandomMirror RandomErase ToPercentCoords Resize SubtractMeans DivideStds 
+Training size: 799
+Validation size: 897
+NUM_CHUNKS: {1: 1, 2: 1, 3: 3, 4: 3}
+NUM_SAMPLE: -1
+T: 3
+anchor_mode: 1
+base_lr: 7.5e-05
+base_net: i3d
+batch_size: 1
+cls_thresh: [0.2, 0.35, 0.5]
+conf_thresh: 0.01
+cuda: True
+cycle_decay: 1.0
+data_root: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\step/datasets/ava/
+dataset: ava
+det_lr: 0.00075
+det_lr0: 0.00015
+det_net: two_branch
+do_crop: True
+do_erase: True
+do_flip: True
+do_photometric: True
+do_proposal_augment: False
+dropout: 0.3
+evaluate_topk: 300
+exp_name: STEP-max3-i3d-two_branch
+fc_dim: 256
+fp16: False
+fps: 12
+freeze_affine: True
+freeze_stats: True
+gamma: 0.1
+id2class: {1: 'bend/bow (at the waist)', 3: 'crouch/kneel', 4: 'dance', 5: 'fall down', 6: 'get up', 7: 'jump/leap', 8: 'lie/sleep', 9: 'martial art', 10: 'run/jog', 11: 'sit', 12: 'stand', 13: 'swim', 14: 'walk', 15: 'answer phone', 17: 'carry/hold (an object)', 20: 'climb (e.g., a mountain)', 22: 'close (e.g., a door, a box)', 24: 'cut', 26: 'dress/put on clothing', 27: 'drink', 28: 'drive (e.g., a car, a truck)', 29: 'eat', 30: 'enter', 34: 'hit (an object)', 36: 'lift/pick up', 37: 'listen (e.g., to music)', 38: 'open (e.g., a window, a car door)', 41: 'play musical instrument', 43: 'point to (an object)', 45: 'pull (an object)', 46: 'push (an object)', 47: 'put down', 48: 'read', 49: 'ride (e.g., a bike, a car, a horse)', 51: 'sail boat', 52: 'shoot', 54: 'smoke', 56: 'take a photo', 57: 'text on/look at a cellphone', 58: 'throw', 59: 'touch (an object)', 60: 'turn (e.g., a screwdriver)', 61: 'watch (e.g., TV)', 62: 'work on a computer', 63: 'write', 64: 'fight/hit (a person)', 65: 'give/serve (an object) to (a person)', 66: 'grab (a person)', 67: 'hand clap', 68: 'hand shake', 69: 'hand wave', 70: 'hug (a person)', 72: 'kiss (a person)', 73: 'lift (a person)', 74: 'listen to (a person)', 76: 'push (another person)', 77: 'sing to (e.g., self, a person, a group)', 78: 'take (an object) from (a person)', 79: 'talk to (e.g., self, a person, a group)', 80: 'watch (a person)'}
+image_size: (400, 400)
+input_type: rgb
+iou_thresh: 0.5
+iterative_mode: temporal
+kinetics_pretrain: None
+label_dict: {0: 1, 1: 3, 2: 4, 3: 5, 4: 6, 5: 7, 6: 8, 7: 9, 8: 10, 9: 11, 10: 12, 11: 13, 12: 14, 13: 15, 14: 17, 15: 20, 16: 22, 17: 24, 18: 26, 19: 27, 20: 28, 21: 29, 22: 30, 23: 34, 24: 36, 25: 37, 26: 38, 27: 41, 28: 43, 29: 45, 30: 46, 31: 47, 32: 48, 33: 49, 34: 51, 35: 52, 36: 54, 37: 56, 38: 57, 39: 58, 40: 59, 41: 60, 42: 61, 43: 62, 44: 63, 45: 64, 46: 65, 47: 66, 48: 67, 49: 68, 50: 69, 51: 70, 52: 72, 53: 73, 54: 74, 55: 76, 56: 77, 57: 78, 58: 79, 59: 80}
+lambda_cls: 0.1
+lambda_neighbor: 1.0
+lambda_reg: 5.0
+mGPUs: True
+man_seed: 123
+max_epochs: 14
+max_iter: 3
+max_pos_num: 5
+means: (0, 0, 0)
+milestones: [11186]
+min_ratio: 0.0
+momentum: 0.9
+name: STEP
+neg_ratio: 2
+nms_thresh: 0.4
+no_context: False
+num_classes: 60
+num_workers: 4
+optimizer: adam
+pool_mode: align
+pool_size: 7
+pretrain_path: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\step/pretrained/ava_cls.pth
+print_step: 500
+proposal_path_train: None
+proposal_path_val: None
+reg_thresh: [0.2, 0.35, 0.5]
+resume_path: Auto
+sampling: uniform
+save_root: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\step/datasets/ava/cache/STEP-max3-i3d-two_branch/
+save_step: 11465
+scale_norm: 2
+scheduler: cosine
+selection_nms: False
+selection_sampling: softmax
+selection_score: score
+start_epochs: 0
+start_iteration: 0
+stds: (1, 1, 1)
+temporal_mode: predict
+topk: 300
+warmup_iters: 1000
+weight_decay: 1e-07
+TwoBranchNet(
+  (i3d_conv): Sequential(
+    (0): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(160, 320, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(32, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (1): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 384, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 192, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(192, 384, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 48, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(48, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+  )
+  (downsample): Conv3d(1024, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (dropout): Dropout(p=0.3, inplace=False)
+  (global_cls): Conv3d(13568, 60, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (local_conv): Sequential(
+    (0): Bottleneck_resample(
+      (conv1): Conv2d(1088, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(1088, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv4): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (downsample2): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+  (local_reg): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg1): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg2): Linear(in_features=12544, out_features=4, bias=True)
+)
+
+TwoBranchNet(
+  (i3d_conv): Sequential(
+    (0): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(160, 320, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(32, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (1): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 384, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 192, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(192, 384, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 48, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(48, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+  )
+  (downsample): Conv3d(1024, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (dropout): Dropout(p=0.3, inplace=False)
+  (global_cls): Conv3d(13568, 60, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (local_conv): Sequential(
+    (0): Bottleneck_resample(
+      (conv1): Conv2d(1088, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(1088, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv4): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (downsample2): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+  (local_reg): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg1): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg2): Linear(in_features=12544, out_features=4, bias=True)
+)
+
+TwoBranchNet(
+  (i3d_conv): Sequential(
+    (0): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 160, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(160, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(160, 320, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(320, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 32, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(32, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+    (1): Mixed(
+      (branch_0): Unit3Dpy(
+        (conv3d): Conv3d(832, 384, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+        (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      )
+      (branch_1): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 192, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(192, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(192, 384, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(384, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_2): Sequential(
+        (0): Unit3Dpy(
+          (conv3d): Conv3d(832, 48, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(48, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(48, 128, kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      (branch_3): Sequential(
+        (0): MaxPool3dTFPadding(
+          (pad): ConstantPad3d(padding=(1, 1, 1, 1, 1, 1), value=0)
+          (pool): MaxPool3d(kernel_size=(3, 3, 3), stride=(1, 1, 1), padding=0, dilation=1, ceil_mode=True)
+        )
+        (1): Unit3Dpy(
+          (conv3d): Conv3d(832, 128, kernel_size=(1, 1, 1), stride=(1, 1, 1), bias=False)
+          (batch3d): BatchNorm3d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+    )
+  )
+  (downsample): Conv3d(1024, 256, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (dropout): Dropout(p=0.3, inplace=False)
+  (global_cls): Conv3d(13568, 60, kernel_size=(1, 1, 1), stride=(1, 1, 1))
+  (local_conv): Sequential(
+    (0): Bottleneck_resample(
+      (conv1): Conv2d(1088, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(1088, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv4): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (1): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+    (2): Bottleneck(
+      (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+      (relu): ReLU(inplace=True)
+    )
+  )
+  (downsample2): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+  (local_reg): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg1): Linear(in_features=12544, out_features=4, bias=True)
+  (neighbor_reg2): Linear(in_features=12544, out_features=4, bias=True)
+)
+
