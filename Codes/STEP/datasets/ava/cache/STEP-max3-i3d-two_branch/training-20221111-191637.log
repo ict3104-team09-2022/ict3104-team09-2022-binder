@@ -1,0 +1,4 @@
+STEP-max3-i3d-two_branch
+Data agumentation: ConvertFromInts PhotometricDistort ConvertFromInts ToAbsoluteCoords RandomSampleCrop RandomMirror RandomErase ToPercentCoords Resize SubtractMeans DivideStds 
+Training size: 852
+Validation size: 897
