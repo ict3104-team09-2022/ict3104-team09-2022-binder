@@ -107,7 +107,6 @@ if args.dataset == 'TSU':
         train_split = './data/smarthome_CV_51.json'
         test_split = './data/smarthome_CV_51.json'
 
-    # rgb_root = '/data/stars/user/rdai/smarthome_untrimmed/features/i3d_16frames_64000_SSD'
     rgb_root = args.featurePath
     flow_root = r""
     skeleton_root = '/skeleton/feat/Path/'
@@ -214,22 +213,16 @@ def run(models, criterion, num_epochs=50):
 
         probs = []
         for model, gpu, dataloader, optimizer, sched, model_file in models:
-            # train_map, train_loss = train_step(model, gpu, optimizer, dataloader['train'], epoch)
             prob_val, val_loss, val_map = val_step(model, gpu, dataloader['val'], epoch)
             probs.append(prob_val)
             sched.step(val_loss)
 
-            # probs.append(train_map)
-            # sched.step(train_loss)
-
-            # value = 10
             if best_map < val_map:
                 best_map = val_map
-                # best_map = value
                 torch.save(model.state_dict(),
-                            args.filepath + str(args.model) + '/weight_epoch_' + str(args.lr) + '_' + str(epoch))
-                torch.save(model, args.filepath + str(args.model) + '/model_epoch_' + str(args.lr) + '_' + str(epoch))
-                print('save here:', args.filepath + str(args.model) + '/weight_epoch_' + str(args.lr) + '_' + str(epoch))
+                            args.filepath + '/weight_epoch_' + str(args.lr) + '_' + str(epoch))
+                torch.save(model, args.filepath + '/model_epoch_' + str(args.lr) + '_' + str(epoch))
+                print('save here:', args.filepath + '/weight_epoch_' + str(args.lr) + '_' + str(epoch))
 
 
 def eval_model(model, dataloader, baseline=False):
@@ -266,9 +259,8 @@ def run_network(model, data, gpu, epoch=0, baseline=False):
     outputs_final = activation
 
     if args.model == "PDAN":
-        # print('outputs_final1', outputs_final.size())
         outputs_final = outputs_final[:, 0, :, :]
-    # print('outputs_final',outputs_final.size())
+
     outputs_final = outputs_final.permute(0, 2, 1)
     probs_f = F.sigmoid(outputs_final) * mask.unsqueeze(2)
     loss_f = F.binary_cross_entropy_with_logits(outputs_final, labels, size_average=False)
@@ -546,29 +538,7 @@ if __name__ == '__main__':
         dataloaders, datasets = load_data(train_split, test_split, skeleton_root)
     elif args.mode == 'rgb':
         print('RGB mode', rgb_root)
-        #load data with train_split (80% number of workers is 8) use test_split for testing, 20% number of workers is 2
         dataloaders, datasets = load_data(train_split, test_split, rgb_root)
-    
-
-    # if args.train is False:
-    #     num_channel = args.num_channel
-    #     if args.mode == 'skeleton':
-    #         input_channnel = 256
-    #     else:
-    #         input_channnel = 1024
-
-    #     num_classes = classes
-    #     mid_channel = int(args.num_channel)
-
-    #     if args.model == "PDAN":
-    #         print("you are processing PDAN")
-    #         from models import PDAN as Net
-
-    #         model = Net(num_stages=1, num_layers=5, num_f_maps=mid_channel, dim=input_channnel, num_classes=classes)
-
-    #     model = torch.nn.DataParallel(model)
-        
-    
 
     if args.train is False:
         num_channel = args.num_channel
@@ -595,7 +565,6 @@ if __name__ == '__main__':
             # entire model
             model = torch.load(args.load_model)
             # weight
-            # model.load_state_dict(torch.load(str(r"content/drive/MyDrive/Colab/ICT3104/PDAN/")))
             print("loaded", args.load_model)
             
 
@@ -609,7 +578,6 @@ if __name__ == '__main__':
         print(lr)
         optimizer = optim.Adam(model.parameters(), lr=lr)
         lr_sched = optim.lr_scheduler.ReduceLROnPlateau(optimizer, factor=0.5, patience=8, verbose=True)
-        # run([(model, 0, dataloaders, optimizer, lr_sched, args.comp_info)], criterion, num_epochs=int(args.epoch))
         video_inference([(model, 0, dataloaders, optimizer, lr_sched, args.comp_info)], num_epochs=int(args.epoch))
 
         
