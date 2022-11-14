@@ -1,0 +1,60 @@
+2022-11-13 21:53:24,391 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Configure stats pid to 26612
+2022-11-13 21:53:24,391 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from C:\Users\user\.config\wandb\settings
+2022-11-13 21:53:24,391 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\settings
+2022-11-13 21:53:24,392 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-13 21:53:24,392 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py', 'program': 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py'}
+2022-11-13 21:53:24,431 INFO    MainThread:26612 [wandb_init.py:_log_setup():476] Logging user logs to c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215324-2im9d0zs\logs\debug.log
+2022-11-13 21:53:24,431 INFO    MainThread:26612 [wandb_init.py:_log_setup():477] Logging internal logs to c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215324-2im9d0zs\logs\debug-internal.log
+2022-11-13 21:53:24,431 INFO    MainThread:26612 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x0000019EFFF91978>
+2022-11-13 21:53:24,431 INFO    MainThread:26612 [wandb_init.py:init():516] calling init triggers
+2022-11-13 21:53:24,431 INFO    MainThread:26612 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-11-13 21:53:24,432 INFO    MainThread:26612 [wandb_init.py:init():569] starting backend
+2022-11-13 21:53:24,432 INFO    MainThread:26612 [wandb_init.py:init():573] setting up manager
+2022-11-13 21:53:24,438 INFO    MainThread:26612 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=spawn, using: spawn
+2022-11-13 21:53:24,442 INFO    MainThread:26612 [wandb_init.py:init():580] backend started and connected
+2022-11-13 21:53:24,454 INFO    MainThread:26612 [wandb_run.py:_label_probe_notebook():1113] probe notebook
+2022-11-13 21:53:24,455 INFO    MainThread:26612 [wandb_run.py:_label_probe_notebook():1123] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-11-13 21:53:24,455 INFO    MainThread:26612 [wandb_init.py:init():658] updated telemetry
+2022-11-13 21:53:24,504 INFO    MainThread:26612 [wandb_init.py:init():694] communicating run to backend with 60 second timeout
+2022-11-13 21:53:25,366 INFO    MainThread:26612 [wandb_run.py:_on_init():2000] communicating current version
+2022-11-13 21:53:25,429 INFO    MainThread:26612 [wandb_run.py:_on_init():2004] got version response 
+2022-11-13 21:53:25,430 INFO    MainThread:26612 [wandb_init.py:init():728] starting run threads in backend
+2022-11-13 21:53:25,678 INFO    MainThread:26612 [wandb_run.py:_console_start():1980] atexit reg
+2022-11-13 21:53:25,678 INFO    MainThread:26612 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2022-11-13 21:53:25,679 INFO    MainThread:26612 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2022-11-13 21:53:25,679 INFO    MainThread:26612 [wandb_run.py:_redirect():1925] Redirects installed.
+2022-11-13 21:53:25,680 INFO    MainThread:26612 [wandb_init.py:init():765] run started, returning control to user process
+2022-11-13 21:53:25,832 INFO    MainThread:26612 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-13 21:53:25,832 INFO    MainThread:26612 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-13 21:54:12,868 INFO    MainThread:26612 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-13 21:54:12,889 INFO    MainThread:26612 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-13 21:54:12,889 INFO    MainThread:26612 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-13 21:54:15,079 INFO    MainThread:26612 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-13 21:54:15,126 INFO    MainThread:26612 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-13 21:54:15,126 INFO    MainThread:26612 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-13 21:54:20,617 INFO    MainThread:26612 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-13 21:54:20,619 INFO    MainThread:26612 [wandb_init.py:_pause_backend():389] pausing backend
+2022-11-13 21:54:20,619 INFO    MainThread:26612 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-13 21:54:22,345 INFO    MainThread:26612 [wandb_init.py:_resume_backend():398] resuming backend
+2022-11-13 21:54:22,373 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Configure stats pid to 26612
+2022-11-13 21:54:22,373 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from C:\Users\user\.config\wandb\settings
+2022-11-13 21:54:22,373 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\settings
+2022-11-13 21:54:22,373 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-11-13 21:54:22,373 INFO    MainThread:26612 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py', 'program': 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py'}
+2022-11-13 21:54:22,387 INFO    MainThread:26612 [wandb_init.py:_log_setup():476] Logging user logs to c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215422-bkgrvz7s\logs\debug.log
+2022-11-13 21:54:22,387 INFO    MainThread:26612 [wandb_init.py:_log_setup():477] Logging internal logs to c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215422-bkgrvz7s\logs\debug-internal.log
+2022-11-13 21:54:22,387 INFO    MainThread:26612 [wandb_init.py:init():516] calling init triggers
+2022-11-13 21:54:22,387 INFO    MainThread:26612 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-11-13 21:54:22,387 INFO    MainThread:26612 [wandb_init.py:init():536] re-initializing run, found existing run on stack: 2im9d0zs
+2022-11-13 21:54:22,389 INFO    MainThread:26612 [wandb_run.py:_finish():1746] finishing run chengliang/ICT-3104/2im9d0zs
+2022-11-13 21:54:22,389 INFO    MainThread:26612 [jupyter.py:save_history():448] not saving jupyter history
+2022-11-13 21:54:22,389 INFO    MainThread:26612 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-11-13 21:54:22,389 INFO    MainThread:26612 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-11-13 21:54:22,389 INFO    MainThread:26612 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2022-11-13 21:54:22,390 INFO    MainThread:26612 [wandb_run.py:_restore():1932] restore
+2022-11-13 21:54:22,390 INFO    MainThread:26612 [wandb_run.py:_restore():1938] restore done
+2022-11-13 21:54:30,871 INFO    MainThread:26612 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-13 21:54:30,871 INFO    MainThread:26612 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-13 21:54:30,876 INFO    MainThread:26612 [wandb_run.py:_footer_sync_info():3333] logging synced files

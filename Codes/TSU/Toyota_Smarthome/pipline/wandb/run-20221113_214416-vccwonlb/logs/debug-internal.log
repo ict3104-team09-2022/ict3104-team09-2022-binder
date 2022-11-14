@@ -1,0 +1,755 @@
+2022-11-13 21:44:16,262 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:44:16.262956
+2022-11-13 21:44:16,264 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:44:16,265 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:44:16,268 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:44:16,268 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\run-vccwonlb.wandb
+2022-11-13 21:44:16,323 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:44:16,922 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files
+2022-11-13 21:44:16,922 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: vccwonlb with start time 1668347056.264957
+2022-11-13 21:44:16,922 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:16,922 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:16,928 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:44:16,928 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:44:17,039 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:44:17,055 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:44:17,055 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:44:17,056 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:44:17,056 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:44:17,056 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:44:17,062 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:44:17,063 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:44:17,063 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:44:17,078 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:44:17,078 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:44:17,087 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:44:17,096 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:44:17,188 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:44:17,188 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:44:17,189 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:44:17.079772', 'startedAt': '2022-11-13T13:44:16.252956', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 589.6375923156738}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:44:17,189 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:44:17,189 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:44:17,189 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:44:17,190 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:44:17,191 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:44:17,191 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:44:17,191 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:44:17,197 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:17,198 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:17,473 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:44:17,929 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\output.log
+2022-11-13 21:44:17,930 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\wandb-metadata.json
+2022-11-13 21:44:17,930 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\wandb-summary.json
+2022-11-13 21:44:17,930 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\requirements.txt
+2022-11-13 21:44:18,673 INFO    Thread-86 :10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmpuk633q6jwandb\dc76x612-wandb-metadata.json
+2022-11-13 21:44:19,942 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\output.log
+2022-11-13 21:44:20,144 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:20,144 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:20,630 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:44:20.629375
+2022-11-13 21:44:20,631 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:44:20,632 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:44:20,635 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:44:20,635 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\run-29zzgn7c.wandb
+2022-11-13 21:44:20,691 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:44:21,216 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files
+2022-11-13 21:44:21,216 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: 29zzgn7c with start time 1668347060.632403
+2022-11-13 21:44:21,216 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:21,216 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:21,221 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:44:21,221 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:44:21,280 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:44:21,296 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:44:21,297 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:44:21,297 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:44:21,297 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:44:21,297 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:44:21,303 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:44:21,304 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:44:21,304 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:44:21,319 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:44:21,319 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:44:21,335 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:44:21,337 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:44:21,484 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:44:21,484 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:44:21,484 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:44:21.319744', 'startedAt': '2022-11-13T13:44:20.580370', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 595.7311096191406}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:44:21,484 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:44:21,484 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:44:21,484 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:44:21,485 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:44:21,486 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:44:21,487 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:44:21,487 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:44:21,493 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:21,494 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:21,762 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:44:22,204 INFO    Thread-102:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmpy37yygmewandb\1vyry6xi-wandb-metadata.json
+2022-11-13 21:44:22,219 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\wandb-metadata.json
+2022-11-13 21:44:22,220 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\wandb-summary.json
+2022-11-13 21:44:22,220 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\output.log
+2022-11-13 21:44:22,220 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\requirements.txt
+2022-11-13 21:44:24,124 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\config.yaml
+2022-11-13 21:44:24,247 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\output.log
+2022-11-13 21:44:24,262 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:24,262 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:24,697 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:24,697 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:25,237 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:44:25.236899
+2022-11-13 21:44:25,238 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:44:25,240 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:44:25,242 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:44:25,242 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\run-h0d1qd2k.wandb
+2022-11-13 21:44:25,242 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:44:25,805 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files
+2022-11-13 21:44:25,805 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: h0d1qd2k with start time 1668347065.153402
+2022-11-13 21:44:25,805 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:25,806 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:25,810 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:44:25,811 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:44:25,887 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:44:25,905 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:44:25,905 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:44:25,905 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:44:25,905 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:44:25,905 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:44:25,912 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:44:25,912 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:44:25,913 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:44:25,930 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:44:25,930 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:44:25,947 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:44:25,949 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:44:26,046 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:44:26,047 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:44:26,047 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:44:25.930195', 'startedAt': '2022-11-13T13:44:25.136406', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 601.0786781311035}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:44:26,047 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:44:26,047 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:44:26,047 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:44:26,048 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:44:26,087 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:44:26,088 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:44:26,088 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:44:26,094 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:26,094 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:26,355 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:44:26,813 INFO    Thread-113:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\requirements.txt
+2022-11-13 21:44:26,814 INFO    Thread-113:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\wandb-summary.json
+2022-11-13 21:44:26,814 INFO    Thread-113:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\output.log
+2022-11-13 21:44:26,814 INFO    Thread-113:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\wandb-metadata.json
+2022-11-13 21:44:26,839 INFO    Thread-118:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmp_ja73ys2wandb\1gps2u27-wandb-metadata.json
+2022-11-13 21:44:28,371 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:28,372 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:28,814 INFO    Thread-113:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\output.log
+2022-11-13 21:44:29,319 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:44:29.319701
+2022-11-13 21:44:29,321 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:44:29,322 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:44:29,326 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:44:29,326 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\run-smcyonwj.wandb
+2022-11-13 21:44:29,387 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:44:29,997 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files
+2022-11-13 21:44:29,997 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:44:29,998 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: smcyonwj with start time 1668347069.322699
+2022-11-13 21:44:29,998 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:29,999 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:29,999 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:44:30,059 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:44:30,075 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:44:30,076 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:44:30,076 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:44:30,076 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:44:30,076 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:44:30,082 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:44:30,083 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:44:30,083 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:44:30,100 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:44:30,100 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:44:30,119 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:44:30,121 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:44:30,241 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:44:30,242 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:44:30,242 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:44:30.101353', 'startedAt': '2022-11-13T13:44:29.307698', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 601.0789337158203}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:44:30,243 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:44:30,243 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:44:30,243 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:44:30,244 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:44:30,245 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:44:30,245 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:44:30,246 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:44:30,252 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:30,253 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:30,538 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:44:30,946 INFO    Thread-134:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmp4vikph0ywandb\16lr9fc4-wandb-metadata.json
+2022-11-13 21:44:31,014 INFO    Thread-129:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\wandb-metadata.json
+2022-11-13 21:44:31,014 INFO    Thread-129:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\output.log
+2022-11-13 21:44:31,015 INFO    Thread-129:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\wandb-summary.json
+2022-11-13 21:44:31,015 INFO    Thread-129:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\requirements.txt
+2022-11-13 21:44:32,483 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:32,484 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:33,037 INFO    Thread-129:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\output.log
+2022-11-13 21:44:33,580 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:44:33.580719
+2022-11-13 21:44:33,582 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:44:33,583 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:44:33,585 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:44:33,586 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\run-2ksupso5.wandb
+2022-11-13 21:44:33,644 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:44:34,204 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files
+2022-11-13 21:44:34,205 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: 2ksupso5 with start time 1668347073.583719
+2022-11-13 21:44:34,205 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:34,205 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:34,210 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:44:34,210 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:44:34,272 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:44:34,288 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:44:34,289 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:44:34,289 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:44:34,289 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:44:34,289 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:44:34,295 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:44:34,296 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:44:34,296 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:44:34,311 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:44:34,311 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:44:34,329 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:44:34,331 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:44:34,423 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:44:34,423 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:44:34,423 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:44:34.312564', 'startedAt': '2022-11-13T13:44:33.570718', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 601.0792541503906}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:44:34,423 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:44:34,423 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:44:34,424 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:44:34,424 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:44:34,463 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:44:34,464 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:44:34,464 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:44:34,469 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:34,470 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:34,753 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:44:34,877 INFO    Thread-33 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214403-1v5cqmi7\files\config.yaml
+2022-11-13 21:44:35,265 INFO    Thread-145:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\wandb-summary.json
+2022-11-13 21:44:35,343 INFO    Thread-150:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmpn29p026iwandb\1sce6jmp-wandb-metadata.json
+2022-11-13 21:44:35,442 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:35,443 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:35,444 INFO    Thread-145:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\requirements.txt
+2022-11-13 21:44:35,447 INFO    Thread-145:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\wandb-metadata.json
+2022-11-13 21:44:35,447 INFO    Thread-145:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\output.log
+2022-11-13 21:44:36,767 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:36,767 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:37,292 INFO    Thread-145:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\output.log
+2022-11-13 21:44:39,110 INFO    Thread-49 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214408-25q9j009\files\config.yaml
+2022-11-13 21:44:39,561 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:39,561 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:39,968 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:39,969 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:41,358 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:41,358 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:41,534 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:44:43,243 INFO    Thread-65 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214412-223by63s\files\config.yaml
+2022-11-13 21:44:43,662 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:43,663 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:45,543 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:45,544 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:47,284 INFO    Thread-81 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214416-vccwonlb\files\config.yaml
+2022-11-13 21:44:47,749 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:47,750 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:49,757 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:49,757 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:50,752 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:50,753 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:52,024 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:53,569 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:53,715 INFO    Thread-97 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214420-29zzgn7c\files\config.yaml
+2022-11-13 21:44:54,015 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:44:54,016 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:44:54,858 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:54,859 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:55,251 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:44:55,252 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:44:56,071 INFO    Thread-113:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214425-h0d1qd2k\files\config.yaml
+2022-11-13 21:44:56,780 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: partial_history
+2022-11-13 21:44:56,782 DEBUG   SenderThread:10628 [sender.py:send():303] send: history
+2022-11-13 21:44:56,782 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:44:56,786 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:44:56,794 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:44:56,794 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\wandb-summary.json
+2022-11-13 21:44:58,831 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:45:00,359 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:45:00.358462
+2022-11-13 21:45:00,360 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:45:00,361 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:45:00,402 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\run-yojinavh.wandb
+2022-11-13 21:45:00,402 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:45:00,403 INFO    Thread-129:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214429-smcyonwj\files\config.yaml
+2022-11-13 21:45:00,434 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:45:01,347 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files
+2022-11-13 21:45:01,347 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: yojinavh with start time 1668347100.362461
+2022-11-13 21:45:01,347 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:45:01,348 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:45:01,354 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:45:01,354 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:45:01,499 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:45:01,518 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:45:01,530 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:45:01,530 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:45:01,531 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:45:01,531 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:45:01,537 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:45:01,538 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:45:01,538 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:45:01,554 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:45:01,555 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:45:01,590 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:45:01,602 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:45:01,726 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:45:01,727 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:45:01,727 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:45:01.555373', 'startedAt': '2022-11-13T13:45:00.344464', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 585.0798873901367}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:45:01,727 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:45:01,727 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:45:01,727 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:45:01,728 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:45:01,729 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:45:01,730 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:45:01,730 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:45:01,736 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:01,736 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:45:02,183 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:45:02,357 INFO    Thread-161:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\wandb-summary.json
+2022-11-13 21:45:02,357 INFO    Thread-161:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\output.log
+2022-11-13 21:45:02,358 INFO    Thread-161:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\wandb-metadata.json
+2022-11-13 21:45:02,358 INFO    Thread-161:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\requirements.txt
+2022-11-13 21:45:02,754 INFO    Thread-166:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmpc5xd0ujhwandb\32of34sw-wandb-metadata.json
+2022-11-13 21:45:04,379 INFO    Thread-161:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\output.log
+2022-11-13 21:45:04,658 INFO    Thread-145:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214433-2ksupso5\files\config.yaml
+2022-11-13 21:45:04,752 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:04,753 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:05,201 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:45:05.200770
+2022-11-13 21:45:05,202 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:45:05,203 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:45:05,207 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:45:05,207 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\run-2nrp2z6m.wandb
+2022-11-13 21:45:05,263 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:45:06,026 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files
+2022-11-13 21:45:06,027 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: 2nrp2z6m with start time 1668347105.203769
+2022-11-13 21:45:06,027 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:45:06,028 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:45:06,032 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:45:06,033 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:45:06,088 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:45:06,105 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:45:06,105 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:45:06,105 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:45:06,106 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:45:06,106 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:45:06,112 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:45:06,112 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:45:06,113 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:45:06,127 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:45:06,128 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:45:06,137 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:45:06,146 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:45:06,243 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:45:06,243 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:45:06,244 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:45:06.128321', 'startedAt': '2022-11-13T13:45:05.152571', 'docker': None, 'cuda': None, 'args': ('-dataset', 'TSU', '-mode', 'rgb', '-split_setting', 'CS', '-model', 'PDAN', '-train', 'True', '-num_channel', '512', '-lr', '0.0002', '-kernelsize', '3', '-APtype', 'map', '-epoch', '3', '-batch_size', '1', '-comp_info', 'TSU_CS_RGB_PDAN', '-load_model', './PreTrainedModel/PDAN_TSU_RGB', '-rgb_root', './CuratedExtractedFeatures', '-featurePath', './data/smarthome_CS_32.json', '-outputTrain', "'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\poop'"), 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 585.0800170898438}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:45:06,244 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:45:06,244 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:45:06,244 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:45:06,245 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:45:06,246 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:45:06,247 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:45:06,248 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:45:06,254 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:06,254 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:45:06,525 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:45:07,022 INFO    Thread-182:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmpog364570wandb\2k4maokc-wandb-metadata.json
+2022-11-13 21:45:07,036 INFO    Thread-177:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\wandb-summary.json
+2022-11-13 21:45:07,036 INFO    Thread-177:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\requirements.txt
+2022-11-13 21:45:07,037 INFO    Thread-177:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\output.log
+2022-11-13 21:45:07,038 INFO    Thread-177:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\wandb-metadata.json
+2022-11-13 21:45:08,897 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:08,898 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:09,055 INFO    Thread-177:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\output.log
+2022-11-13 21:45:09,949 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: pause
+2022-11-13 21:45:09,950 INFO    HandlerThread:10628 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-13 21:45:09,950 INFO    HandlerThread:10628 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-13 21:45:09,950 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-13 21:45:09,960 INFO    HandlerThread:10628 [interfaces.py:finish():173] Joined cpu
+2022-11-13 21:45:09,960 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-13 21:45:09,961 INFO    HandlerThread:10628 [interfaces.py:finish():173] Joined disk
+2022-11-13 21:45:10,067 INFO    HandlerThread:10628 [interfaces.py:finish():173] Joined gpu
+2022-11-13 21:45:10,067 INFO    HandlerThread:10628 [interfaces.py:finish():173] Joined memory
+2022-11-13 21:45:10,067 INFO    HandlerThread:10628 [interfaces.py:finish():173] Joined network
+2022-11-13 21:45:10,068 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:10,608 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:10,609 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:45:11,035 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:45:12,979 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:12,980 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:17,106 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:17,108 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:21,350 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:21,363 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:25,887 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:25,888 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:45:25,958 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:25,959 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:30,146 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:30,147 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:31,727 INFO    Thread-161:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214500-yojinavh\files\config.yaml
+2022-11-13 21:45:34,334 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:45:34,336 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:34,759 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:36,296 INFO    Thread-177:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214505-2nrp2z6m\files\config.yaml
+2022-11-13 21:45:38,901 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:41,194 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:41,195 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:45:42,993 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:47,108 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:51,368 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:55,972 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:45:56,520 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:45:56,521 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:46:00,159 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:01,609 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:46:01,610 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:04,337 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:04,761 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:06,148 DEBUG   SystemMonitor:10628 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-13 21:46:06,149 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:08,904 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:11,812 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:46:11,812 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:46:13,007 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:17,119 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:21,375 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:25,979 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:27,276 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:46:27,277 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:46:30,168 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:31,623 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:34,338 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:34,764 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:36,156 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:38,927 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:42,552 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:46:42,553 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:46:43,022 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:47,118 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:51,390 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:55,986 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:46:57,862 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:46:57,863 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:47:00,176 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:01,625 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:04,345 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:04,770 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:06,158 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:08,924 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:13,036 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:13,130 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:47:13,131 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:47:17,121 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:21,396 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:25,989 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:28,407 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:47:28,408 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:47:30,183 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:31,631 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:34,346 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:34,783 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:36,171 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:38,926 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:43,050 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:43,717 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:47:43,718 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:47:47,132 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:51,403 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:56,004 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:47:58,987 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:47:58,987 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:48:00,191 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:01,639 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:04,366 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:04,801 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:06,176 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:08,938 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:13,083 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:14,283 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:48:14,284 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:48:17,134 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:21,406 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:26,024 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:29,569 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:48:29,570 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:48:30,215 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:31,644 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:34,368 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:34,796 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:36,188 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:38,939 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:43,078 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:44,850 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:48:44,851 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:48:47,144 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:51,416 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:48:56,026 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:00,147 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:49:00,147 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:49:00,226 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:01,646 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:04,408 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:04,810 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:06,202 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:08,959 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:13,082 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:15,446 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:49:15,447 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:49:17,150 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:21,414 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:26,049 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:30,272 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:30,719 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:49:30,721 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:49:31,665 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:34,407 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:34,814 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:36,205 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:38,956 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:43,089 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:46,074 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:49:46,074 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:49:47,187 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:51,455 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:49:56,051 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:00,269 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:01,354 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:50:01,354 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:50:01,665 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:04,415 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:04,820 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:06,207 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:08,959 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:13,094 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:16,656 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:50:16,657 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:50:17,160 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:21,433 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:26,064 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:30,293 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:31,674 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:31,974 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:50:31,974 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:50:34,428 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:34,845 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:36,211 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:38,965 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:43,109 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:47,161 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:47,255 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:50:47,255 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:50:51,433 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:50:56,081 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:00,293 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:01,679 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:02,525 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:51:02,526 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:51:04,442 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:04,848 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:06,211 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:08,970 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:13,137 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:17,175 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:17,845 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:51:17,847 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:51:21,435 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:26,091 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:30,304 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:31,685 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:33,196 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:51:33,197 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:51:34,456 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:34,860 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:36,217 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:38,048 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: resume
+2022-11-13 21:51:38,049 INFO    HandlerThread:10628 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-13 21:51:38,089 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: pause
+2022-11-13 21:51:38,091 INFO    HandlerThread:10628 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-13 21:51:38,983 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:42,523 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: resume
+2022-11-13 21:51:42,524 INFO    HandlerThread:10628 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-13 21:51:42,574 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: pause
+2022-11-13 21:51:42,575 INFO    HandlerThread:10628 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-13 21:51:43,155 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:47,184 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:48,464 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:51:48,465 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:51:49,365 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: resume
+2022-11-13 21:51:49,365 INFO    HandlerThread:10628 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-13 21:51:49,366 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: pause
+2022-11-13 21:51:49,366 INFO    HandlerThread:10628 [handler.py:handle_request_pause():696] stopping system metrics thread or process
+2022-11-13 21:51:51,286 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:51:51,438 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:56,110 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:51:56,277 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: resume
+2022-11-13 21:51:56,278 INFO    HandlerThread:10628 [handler.py:handle_request_resume():687] starting system metrics thread or process
+2022-11-13 21:51:56,307 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:51:56,310 DEBUG   SenderThread:10628 [sender.py:send():303] send: exit
+2022-11-13 21:51:56,310 INFO    SenderThread:10628 [sender.py:send_exit():442] handling exit code: 0
+2022-11-13 21:51:56,311 INFO    SenderThread:10628 [sender.py:send_exit():444] handling runtime: 76
+2022-11-13 21:51:56,312 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:51:56,312 INFO    SenderThread:10628 [sender.py:send_exit():450] send defer
+2022-11-13 21:51:56,313 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,313 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-13 21:51:56,313 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,313 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-13 21:51:56,314 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 1
+2022-11-13 21:51:56,314 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,314 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-13 21:51:56,315 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,323 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-13 21:51:56,323 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 2
+2022-11-13 21:51:56,323 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,324 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-13 21:51:56,324 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,324 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-13 21:51:56,324 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 3
+2022-11-13 21:51:56,325 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,325 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-13 21:51:56,325 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,325 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-13 21:51:56,325 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 4
+2022-11-13 21:51:56,326 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,326 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-13 21:51:56,326 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:51:56,327 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:51:56,327 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,328 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-13 21:51:56,328 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 5
+2022-11-13 21:51:56,328 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,328 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-13 21:51:56,329 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,329 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-13 21:51:56,418 INFO    Thread-17 :10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\wandb-summary.json
+2022-11-13 21:51:56,663 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 6
+2022-11-13 21:51:56,664 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:56,664 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 6
+2022-11-13 21:51:56,664 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:56,664 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-13 21:51:57,298 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 7
+2022-11-13 21:51:57,299 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:57,299 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 7
+2022-11-13 21:51:57,299 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:57,299 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-13 21:51:57,300 INFO    SenderThread:10628 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-13 21:51:57,312 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-13 21:51:57,426 INFO    SenderThread:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\config.yaml
+2022-11-13 21:51:57,426 INFO    SenderThread:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:51:57,427 INFO    SenderThread:10628 [dir_watcher.py:finish():392] scan: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files
+2022-11-13 21:51:57,427 INFO    SenderThread:10628 [dir_watcher.py:finish():406] scan save: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\config.yaml config.yaml
+2022-11-13 21:51:57,427 INFO    SenderThread:10628 [dir_watcher.py:finish():406] scan save: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log output.log
+2022-11-13 21:51:57,430 INFO    SenderThread:10628 [dir_watcher.py:finish():406] scan save: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\requirements.txt requirements.txt
+2022-11-13 21:51:57,432 INFO    SenderThread:10628 [dir_watcher.py:finish():406] scan save: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\wandb-metadata.json wandb-metadata.json
+2022-11-13 21:51:57,436 INFO    SenderThread:10628 [dir_watcher.py:finish():406] scan save: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\wandb-summary.json wandb-summary.json
+2022-11-13 21:51:57,437 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 8
+2022-11-13 21:51:57,439 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: poll_exit
+2022-11-13 21:51:57,440 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:57,441 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 8
+2022-11-13 21:51:57,442 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:57,442 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-13 21:51:57,442 INFO    SenderThread:10628 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-13 21:51:58,149 INFO    Thread-183:10628 [upload_job.py:push():143] Uploaded file c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\config.yaml
+2022-11-13 21:51:58,232 INFO    Thread-186:10628 [upload_job.py:push():143] Uploaded file c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\wandb-summary.json
+2022-11-13 21:51:58,233 INFO    Thread-185:10628 [upload_job.py:push():143] Uploaded file c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\requirements.txt
+2022-11-13 21:51:58,323 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-13 21:51:58,324 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: poll_exit
+2022-11-13 21:51:58,956 INFO    Thread-184:10628 [upload_job.py:push():143] Uploaded file c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\files\output.log
+2022-11-13 21:51:59,168 INFO    Thread-16 :10628 [sender.py:transition_state():463] send defer: 9
+2022-11-13 21:51:59,168 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:59,169 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 9
+2022-11-13 21:51:59,169 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:59,169 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-13 21:51:59,170 INFO    SenderThread:10628 [file_pusher.py:join():173] waiting for file pusher
+2022-11-13 21:51:59,170 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 10
+2022-11-13 21:51:59,170 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:59,171 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 10
+2022-11-13 21:51:59,171 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:59,171 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-13 21:51:59,338 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-13 21:51:59,922 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 11
+2022-11-13 21:51:59,922 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: poll_exit
+2022-11-13 21:51:59,923 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:59,923 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 11
+2022-11-13 21:51:59,924 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:59,924 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-13 21:51:59,924 INFO    SenderThread:10628 [sender.py:transition_state():463] send defer: 12
+2022-11-13 21:51:59,925 DEBUG   SenderThread:10628 [sender.py:send():303] send: final
+2022-11-13 21:51:59,925 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: defer
+2022-11-13 21:51:59,925 DEBUG   SenderThread:10628 [sender.py:send():303] send: footer
+2022-11-13 21:51:59,925 INFO    HandlerThread:10628 [handler.py:handle_request_defer():162] handle defer: 12
+2022-11-13 21:51:59,927 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: defer
+2022-11-13 21:51:59,927 INFO    SenderThread:10628 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-13 21:51:59,928 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-13 21:51:59,929 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: poll_exit
+2022-11-13 21:51:59,929 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: server_info
+2022-11-13 21:51:59,929 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: server_info
+2022-11-13 21:51:59,930 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: get_summary
+2022-11-13 21:51:59,931 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: sampled_history
+2022-11-13 21:52:00,319 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:00,485 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: shutdown
+2022-11-13 21:52:00,486 INFO    HandlerThread:10628 [handler.py:finish():814] shutting down handler
+2022-11-13 21:52:00,937 INFO    WriterThread:10628 [datastore.py:close():279] close: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_214352-10q16lhq\run-10q16lhq.wandb
+2022-11-13 21:52:01,491 INFO    SenderThread:10628 [sender.py:finish():1331] shutting down sender
+2022-11-13 21:52:01,497 INFO    SenderThread:10628 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-13 21:52:01,497 INFO    SenderThread:10628 [file_pusher.py:join():173] waiting for file pusher
+2022-11-13 21:52:01,692 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:02,521 INFO    StreamThr :10628 [internal.py:wandb_internal():91] W&B internal server running at pid: 10628, started at: 2022-11-13 21:52:02.521770
+2022-11-13 21:52:02,522 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: status
+2022-11-13 21:52:02,524 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: status
+2022-11-13 21:52:02,526 DEBUG   SenderThread:10628 [sender.py:send():303] send: header
+2022-11-13 21:52:02,526 INFO    WriterThread:10628 [datastore.py:open_for_write():75] open: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\run-19lm78ss.wandb
+2022-11-13 21:52:02,527 DEBUG   SenderThread:10628 [sender.py:send():303] send: run
+2022-11-13 21:52:03,131 INFO    SenderThread:10628 [dir_watcher.py:__init__():216] watching files in: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files
+2022-11-13 21:52:03,132 INFO    SenderThread:10628 [sender.py:_start_run_threads():931] run started: 19lm78ss with start time 1668347521.523921
+2022-11-13 21:52:03,132 DEBUG   SenderThread:10628 [sender.py:send():303] send: summary
+2022-11-13 21:52:03,133 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-13 21:52:03,133 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: check_version
+2022-11-13 21:52:03,134 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: check_version
+2022-11-13 21:52:03,260 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: run_start
+2022-11-13 21:52:03,275 DEBUG   HandlerThread:10628 [system_info.py:__init__():31] System info init
+2022-11-13 21:52:03,276 DEBUG   HandlerThread:10628 [system_info.py:__init__():46] System info init done
+2022-11-13 21:52:03,276 INFO    HandlerThread:10628 [system_monitor.py:start():150] Starting system monitor
+2022-11-13 21:52:03,276 INFO    SystemMonitor:10628 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-13 21:52:03,276 INFO    HandlerThread:10628 [system_monitor.py:probe():168] Collecting system info
+2022-11-13 21:52:03,282 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started cpu
+2022-11-13 21:52:03,283 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started disk
+2022-11-13 21:52:03,283 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started gpu
+2022-11-13 21:52:03,298 DEBUG   HandlerThread:10628 [system_info.py:probe():195] Probing system
+2022-11-13 21:52:03,299 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started memory
+2022-11-13 21:52:03,315 INFO    SystemMonitor:10628 [interfaces.py:start():168] Started network
+2022-11-13 21:52:03,316 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():180] Probing git
+2022-11-13 21:52:03,431 DEBUG   HandlerThread:10628 [system_info.py:_probe_git():188] Probing git done
+2022-11-13 21:52:03,431 DEBUG   HandlerThread:10628 [system_info.py:probe():241] Probing system done
+2022-11-13 21:52:03,431 DEBUG   HandlerThread:10628 [system_monitor.py:probe():177] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.6.8', 'heartbeatAt': '2022-11-13T13:52:03.299283', 'startedAt': '2022-11-13T13:51:56.299412', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py', 'codePath': 'Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py', 'git': {'remote': 'https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git', 'commit': '97c1b53221d160d4d37f3edf9d9106eb0c1e08df'}, 'email': '68848568+zhenxuan98@users.noreply.github.com', 'root': 'C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder', 'host': 'DESKTOP-JM416HJ', 'username': 'user', 'executable': 'c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2500.0, 'min': 0.0, 'max': 2500.0}, 'cpu_freq_per_core': [{'current': 2500.0, 'min': 0.0, 'max': 2500.0}], 'disk': {'total': 953.2561683654785, 'used': 585.0849456787109}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.792839050292969}}
+2022-11-13 21:52:03,431 INFO    HandlerThread:10628 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-13 21:52:03,432 INFO    HandlerThread:10628 [system_monitor.py:probe():181] Publishing system info
+2022-11-13 21:52:03,432 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2022-11-13 21:52:03,432 DEBUG   HandlerThread:10628 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-13 21:52:03,472 INFO    HandlerThread:10628 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-13 21:52:03,473 DEBUG   SenderThread:10628 [sender.py:send():303] send: files
+2022-11-13 21:52:03,473 INFO    SenderThread:10628 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-13 21:52:03,487 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:52:03,488 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:52:03,763 DEBUG   SenderThread:10628 [sender.py:send():303] send: telemetry
+2022-11-13 21:52:04,151 INFO    Thread-196:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\wandb-metadata.json
+2022-11-13 21:52:04,152 INFO    Thread-196:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\requirements.txt
+2022-11-13 21:52:04,152 INFO    Thread-196:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\output.log
+2022-11-13 21:52:04,152 INFO    Thread-196:10628 [dir_watcher.py:_on_file_created():275] file/dir created: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\wandb-summary.json
+2022-11-13 21:52:04,409 INFO    Thread-201:10628 [upload_job.py:push():143] Uploaded file C:\Users\user\AppData\Local\Temp\tmp0nej28o0wandb\3am5bjq9-wandb-metadata.json
+2022-11-13 21:52:04,470 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:04,875 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:06,184 INFO    Thread-196:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\output.log
+2022-11-13 21:52:06,231 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:08,229 INFO    Thread-196:10628 [dir_watcher.py:_on_file_modified():292] file/dir modified: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb\run-20221113_215156-19lm78ss\files\output.log
+2022-11-13 21:52:08,985 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:13,155 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:17,175 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:18,787 DEBUG   HandlerThread:10628 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-13 21:52:18,788 DEBUG   SenderThread:10628 [sender.py:send_request():317] send_request: stop_status
+2022-11-13 21:52:21,477 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats
+2022-11-13 21:52:26,102 DEBUG   SenderThread:10628 [sender.py:send():303] send: stats

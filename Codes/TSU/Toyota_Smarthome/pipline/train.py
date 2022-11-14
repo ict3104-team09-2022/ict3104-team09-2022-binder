@@ -4,7 +4,16 @@ import os
 import argparse
 import sys
 import torch
+import wandb
+run = wandb.init(project="ICT-3104", entity="chengliang")
+wandb.config = {
+  "learning_rate": 0.001,
+  "epochs": 3,
+  "batch_size": 1
+}
 
+api = wandb.Api()
+print("HIIIIII "+ run.id)
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -160,17 +169,20 @@ def run(models, criterion, num_epochs=50):
         probs = []
         for model, gpu, dataloader, optimizer, sched, model_file in models:
             train_map, train_loss = train_step(model, gpu, optimizer, dataloader['train'], epoch)
+            wandb.log({'accuracy': train_map, 'loss': train_loss})
             prob_val, val_loss, val_map = val_step(model, gpu, dataloader['val'], epoch)
             probs.append(prob_val)
             sched.step(val_loss)
 
             filepath = args.outputTrain
+            filepath = filepath.strip("'")
+            print(filepath)
 
             if best_map < val_map:
                 best_map = val_map
-                torch.save(model.state_dict(), filepath +'/weight_epoch_'+str(args.lr)+'_'+str(epoch))
-                torch.save(model,filepath +'/model_epoch_'+str(args.lr)+'_'+str(epoch))
-                print('save here:',filepath +'/weight_epoch_'+str(args.lr)+'_'+str(epoch))
+                torch.save(model.state_dict(), filepath +'weight_epoch_'+str(args.lr)+'_'+str(epoch))
+                torch.save(model,filepath +'model_epoch_'+str(args.lr)+'_'+str(epoch))
+                print('save here:',filepath +'weight_epoch_'+str(args.lr)+'_'+str(epoch))
 
 def eval_model(model, dataloader, baseline=False):
     results = {}

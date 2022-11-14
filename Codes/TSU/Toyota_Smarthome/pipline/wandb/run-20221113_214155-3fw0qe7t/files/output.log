@@ -1,0 +1,27 @@
+Random_SEED!!!: 0
+PDAN
+batch_size: 1
+cuda_avail True
+RGB mode ./CuratedExtractedFeatures
+ 51%|█████     | 273/536 [00:01<00:01, 239.67it/s]
+100%|██████████| 536/536 [00:02<00:00, 246.92it/s]
+100%|██████████| 536/536 [00:00<00:00, 542.21it/s]
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:88: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.key_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:89: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.value_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:90: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.query_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:91: UserWarning: nn.init.normal is now deprecated in favor of nn.init.normal_.
+  init.normal(self.rel_t, 0, 1)
+loaded ./PreTrainedModel/PDAN_TSU_RGB
+pytorch_total_params 5804083
+num_channel: 512 input_channnel: 1024 num_classes: 51
+0.0002
+Epoch 0/139
+----------
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
