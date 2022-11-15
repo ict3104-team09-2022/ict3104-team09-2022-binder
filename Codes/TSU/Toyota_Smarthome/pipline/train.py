@@ -4,7 +4,19 @@ import os
 import argparse
 import sys
 import torch
+from datetime import date
 import wandb
+#Create the neccessary folder called Wandb Result
+current_directory = os.getcwd()
+wandb_result_directory = os.path.join(current_directory, r'wandb_result')
+if not os.path.exists(wandb_result_directory):
+   os.makedirs(wandb_result_directory)
+
+#Create a folder with today's date
+current_date_directory=os.path.join(wandb_result_directory, r'{0}'.format(date.today().strftime("%Y%m%d")))
+if not os.path.exists(current_date_directory):
+   os.makedirs(current_date_directory)
+   
 run = wandb.init(project="ICT-3104", entity="chengliang")
 wandb.config = {
   "learning_rate": 0.001,
@@ -13,7 +25,9 @@ wandb.config = {
 }
 
 api = wandb.Api()
-print("HIIIIII "+ run.id)
+
+#Create a csv file under the current run
+open (os.path.join(current_date_directory,r'{0}'.format(run.id))+".csv",'a')
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -170,6 +184,9 @@ def run(models, criterion, num_epochs=50):
         for model, gpu, dataloader, optimizer, sched, model_file in models:
             train_map, train_loss = train_step(model, gpu, optimizer, dataloader['train'], epoch)
             wandb.log({'accuracy': train_map, 'loss': train_loss})
+            #Save the run result to a CSV File
+            system_metrics = wandb.Api().run("chengliang/ICT-3104/{0}".format(run.id)).history(stream="events")
+            system_metrics.to_csv(os.path.join(current_date_directory,r'{0}'.format(run.id))+".csv")
             prob_val, val_loss, val_map = val_step(model, gpu, dataloader['val'], epoch)
             probs.append(prob_val)
             sched.step(val_loss)
