@@ -1,0 +1,82 @@
+Random_SEED!!!: 0
+PDAN
+batch_size: 1
+cuda_avail True
+RGB mode ./CuratedExtractedFeatures
+100%|██████████| 536/536 [00:02<00:00, 203.49it/s]
+ 72%|███████▏  | 384/536 [00:00<00:00, 370.72it/s]
+you are processing PDAN
+loaded ./PreTrainedModel/PDAN_TSU_RGB
+pytorch_total_params 5804083
+num_channel: 512 input_channnel: 1024 num_classes: 51
+0.0002
+Epoch 0/2
+100%|██████████| 536/536 [00:01<00:00, 372.93it/s]
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:88: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.key_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:89: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.value_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:90: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.query_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:91: UserWarning: nn.init.normal is now deprecated in favor of nn.init.normal_.
+  init.normal(self.rel_t, 0, 1)
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+train-map: tensor(9.1917)
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+val-map: tensor(16.1319)
+tensor([1.1825e+01, 3.4855e+01, 1.2071e+01, 2.3929e+01, 4.9908e+00, 1.8596e+01,
+        1.8954e+00, 1.4821e+01, 1.1304e+01, 4.8754e+00, 3.6763e+00, 1.5271e+00,
+        3.0348e+00, 1.1417e+01, 8.8608e+00, 3.2354e+00, 2.3355e+00, 2.4291e+01,
+        2.2741e+00, 5.4444e+01, 4.7396e+00, 2.7444e+01, 4.6401e+01, 3.6600e+00,
+        2.1399e-01, 2.4320e+01, 2.8573e+01, 1.3553e+01, 2.0174e+01, 2.3915e+00,
+        1.1522e+00, 1.3585e-02, 1.7871e+01, 9.6814e-01, 4.2309e+01, 7.6712e+01,
+        1.4331e+01, 4.7170e+00, 9.4359e+00, 9.5857e-01, 3.7444e+01, 6.1609e+00,
+        2.3646e+01, 6.6449e+01, 5.5656e-01, 3.1054e+01, 2.6406e+01, 2.3906e+01,
+        1.1646e+01, 1.1516e+00, 1.0800e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
+save here: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\weight_epoch_0.0002_0
+Epoch 1/2
+----------
+train-map: tensor(14.0697)
+val-map: tensor(19.0361)
+tensor([1.4485e+01, 3.7644e+01, 2.0593e+01, 2.7412e+01, 1.0774e+01, 2.4957e+01,
+        2.9015e+00, 1.8770e+01, 1.5034e+01, 6.2073e+00, 4.3996e+00, 2.0586e+00,
+        2.4498e+00, 1.2634e+01, 1.8049e+01, 4.1710e+00, 2.5295e+00, 3.2082e+01,
+        3.2122e+00, 6.7931e+01, 7.2793e+00, 3.7773e+01, 4.6399e+01, 4.6916e+00,
+        2.4935e-01, 2.7367e+01, 2.7361e+01, 2.3829e+01, 2.5918e+01, 3.7321e+00,
+        1.8479e+00, 9.8110e-03, 2.2773e+01, 1.2402e+00, 2.9724e+01, 7.5669e+01,
+        1.3410e+01, 5.1156e+00, 1.1889e+01, 4.3958e+00, 4.6185e+01, 6.2033e+00,
+        2.4330e+01, 6.5076e+01, 2.9770e+00, 5.0397e+01, 3.7665e+01, 2.8632e+01,
+        8.9698e+00, 1.3302e+00, 1.0728e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
+save here: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\weight_epoch_0.0002_1
+Epoch 2/2
+----------
+train-map: tensor(19.2994)
+val-map: tensor(20.4542)
+tensor([1.9874e+01, 4.0690e+01, 2.6711e+01, 2.4236e+01, 8.0835e+00, 2.8444e+01,
+        2.5221e+00, 1.9041e+01, 1.7086e+01, 5.5280e+00, 4.0222e+00, 2.5426e+00,
+        1.0147e+00, 1.3290e+01, 1.4403e+01, 7.0201e+00, 3.2401e+00, 4.1860e+01,
+        4.3711e+00, 6.2691e+01, 9.7292e+00, 3.4107e+01, 5.4480e+01, 4.9330e+00,
+        2.7953e-01, 3.1824e+01, 2.8337e+01, 1.6621e+01, 2.6896e+01, 4.4313e+00,
+        2.1467e+00, 1.0166e-02, 2.4131e+01, 1.2290e+00, 4.2371e+01, 8.4518e+01,
+        1.5099e+01, 7.4379e+00, 1.2406e+01, 5.3242e+00, 5.0168e+01, 1.1025e+01,
+        2.9983e+01, 6.8258e+01, 6.1794e-01, 4.9108e+01, 4.3837e+01, 2.6862e+01,
+        8.8340e+00, 1.3735e+00, 1.1851e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\

@@ -1,0 +1,63 @@
+Iter 1: MEANAP =>0.3526672150689032
+Iter 2: MEANAP =>0.4009736796099434
+Iter 3: MEANAP =>0.39422420050690027
+(1) bend/bow (at the waist): 0.16301131607798275
+(3) crouch/kneel: nan
+(4) dance: nan
+(5) fall down: nan
+(6) get up: 0.16666666666666666
+(7) jump/leap: nan
+(8) lie/sleep: nan
+(9) martial art: nan
+(10) run/jog: 0.6513888888888888
+(11) sit: 0.7651825251034422
+(12) stand: 0.8212031990600164
+(13) swim: nan
+(14) walk: 0.8050682538566304
+(15) answer phone: nan
+(17) carry/hold (an object): 0.633153391030068
+(20) climb (e.g., a mountain): nan
+(22) close (e.g., a door, a box): nan
+(24) cut: nan
+(26) dress/put on clothing: nan
+(27) drink: nan
+(28) drive (e.g., a car, a truck): nan
+(29) eat: nan
+(30) enter: nan
+(34) hit (an object): nan
+(36) lift/pick up: 0.0
+(37) listen (e.g., to music): nan
+(38) open (e.g., a window, a car door): nan
+(41) play musical instrument: nan
+(43) point to (an object): nan
+(45) pull (an object): nan
+(46) push (an object): nan
+(47) put down: nan
+(48) read: nan
+(49) ride (e.g., a bike, a car, a horse): nan
+(51) sail boat: nan
+(52) shoot: nan
+(54) smoke: nan
+(56) take a photo: nan
+(57) text on/look at a cellphone: nan
+(58) throw: 0.0
+(59) touch (an object): 0.10543665789439201
+(60) turn (e.g., a screwdriver): nan
+(61) watch (e.g., TV): nan
+(62) work on a computer: nan
+(63) write: nan
+(64) fight/hit (a person): nan
+(65) give/serve (an object) to (a person): nan
+(66) grab (a person): nan
+(67) hand clap: 0.0
+(68) hand shake: nan
+(69) hand wave: 0.0
+(70) hug (a person): nan
+(72) kiss (a person): nan
+(73) lift (a person): nan
+(74) listen to (a person): 0.5256766255868928
+(76) push (another person): nan
+(77) sing to (e.g., self, a person, a group): nan
+(78) take (an object) from (a person): nan
+(79) talk to (e.g., self, a person, a group): 0.933168517762098
+(80) watch (a person): 0.3434069656764268

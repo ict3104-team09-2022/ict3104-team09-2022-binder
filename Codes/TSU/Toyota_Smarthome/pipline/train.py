@@ -17,7 +17,7 @@ current_date_directory=os.path.join(wandb_result_directory, r'{0}'.format(date.t
 if not os.path.exists(current_date_directory):
    os.makedirs(current_date_directory)
    
-run = wandb.init(project="ICT-3104", entity="chengliang")
+wandbrun = wandb.init(project="ICT-3104", entity="chengliang")
 wandb.config = {
   "learning_rate": 0.001,
   "epochs": 3,
@@ -27,7 +27,7 @@ wandb.config = {
 api = wandb.Api()
 
 #Create a csv file under the current run
-open (os.path.join(current_date_directory,r'{0}'.format(run.id))+".csv",'a')
+open (os.path.join(current_date_directory,r'{0}'.format(wandbrun.id))+".csv",'a')
 
 def str2bool(v):
     if v.lower() in ('yes', 'true', 't', 'y', '1'):
@@ -185,8 +185,8 @@ def run(models, criterion, num_epochs=50):
             train_map, train_loss = train_step(model, gpu, optimizer, dataloader['train'], epoch)
             wandb.log({'accuracy': train_map, 'loss': train_loss})
             #Save the run result to a CSV File
-            system_metrics = wandb.Api().run("chengliang/ICT-3104/{0}".format(run.id)).history(stream="events")
-            system_metrics.to_csv(os.path.join(current_date_directory,r'{0}'.format(run.id))+".csv")
+            system_metrics = wandb.Api().run("chengliang/ICT-3104/{0}".format(wandbrun.id)).history(stream="events")
+            system_metrics.to_csv(os.path.join(current_date_directory,r'{0}'.format(wandbrun.id))+".csv")
             prob_val, val_loss, val_map = val_step(model, gpu, dataloader['val'], epoch)
             probs.append(prob_val)
             sched.step(val_loss)

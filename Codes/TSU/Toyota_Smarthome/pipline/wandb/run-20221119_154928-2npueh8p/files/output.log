@@ -1,0 +1,65 @@
+Traceback (most recent call last):
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 2294, in _get_value
+    result = type_func(arg_string)
+  File "c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\train.py", line 38, in str2bool
+    raise argparse.ArgumentTypeError('Boolean value expected.')
+argparse.ArgumentTypeError: Boolean value expected.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1766, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1972, in _parse_known_args
+    start_index = consume_optional(start_index)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1912, in consume_optional
+    take_action(action, args, option_string)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1824, in take_action
+    argument_values = self._get_values(action, argument_strings)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 2265, in _get_values
+    value = self._get_value(action, arg_string)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 2300, in _get_value
+    raise ArgumentError(action, msg)
+argparse.ArgumentError: argument -train: Boolean value expected.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python36\site-packages\IPython\core\interactiveshell.py", line 2731, in safe_execfile
+    self.compile if shell_futures else None)
+  File "C:\Users\user\AppData\Roaming\Python\Python36\site-packages\IPython\utils\py3compat.py", line 168, in execfile
+    exec(compiler(f.read(), fname, 'exec'), glob, loc)
+  File "c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\train.py", line 65, in <module>
+    args = parser.parse_args()
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1734, in parse_args
+    args, argv = self.parse_known_args(args, namespace)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 1773, in parse_known_args
+    self.error(str(err))
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 2393, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\argparse.py", line 2380, in exit
+    _sys.exit(status)
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\wandb\sdk\lib\exit_hooks.py", line 37, in exit
+    self._orig_exit(orig_code)
+SystemExit: 2
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Roaming\Python\Python36\site-packages\IPython\core\ultratb.py", line 1169, in get_records
+    return _fixed_getinnerframes(etb, number_of_lines_of_context, tb_offset)
+  File "C:\Users\user\AppData\Roaming\Python\Python36\site-packages\IPython\core\ultratb.py", line 316, in wrapped
+    return f(*args, **kwargs)
+  File "C:\Users\user\AppData\Roaming\Python\Python36\site-packages\IPython\core\ultratb.py", line 350, in _fixed_getinnerframes
+    records = fix_frame_records_filenames(inspect.getinnerframes(etb, context))
+  File "c:\Users\user\AppData\Local\Programs\Python\Python36\lib\inspect.py", line 1490, in getinnerframes
+    frameinfo = (tb.tb_frame,) + getframeinfo(tb, context)
+AttributeError: 'tuple' object has no attribute 'tb_frame'
+usage: train.py [-h] [-mode MODE] [-train TRAIN] [-comp_info COMP_INFO]
+                [-rgb_model_file RGB_MODEL_FILE]
+                [-flow_model_file FLOW_MODEL_FILE] [-gpu GPU]
+                [-dataset DATASET] [-rgb_root RGB_ROOT] [-flow_root FLOW_ROOT]
+                [-type TYPE] [-lr LR] [-epoch EPOCH] [-model MODEL]
+                [-APtype APTYPE] [-randomseed RANDOMSEED]
+                [-load_model LOAD_MODEL] [-num_channel NUM_CHANNEL]
+                [-batch_size BATCH_SIZE] [-kernelsize KERNELSIZE] [-feat FEAT]
+                [-split_setting SPLIT_SETTING] [-featurePath FEATUREPATH]
+                [-outputTrain OUTPUTTRAIN]
+train.py: error: argument -train: Boolean value expected.
+ERROR:root:Internal Python error in the inspect module.
+Below is the traceback from this internal error.
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
