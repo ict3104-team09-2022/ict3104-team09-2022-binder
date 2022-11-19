@@ -185,7 +185,8 @@ def run(models, criterion, num_epochs=50):
             train_map, train_loss = train_step(model, gpu, optimizer, dataloader['train'], epoch)
             wandb.log({'accuracy': train_map, 'loss': train_loss})
             #Save the run result to a CSV File
-            system_metrics = wandb.Api().run("chengliang/ICT-3104/{0}".format(wandbrun.id)).history(stream="events")
+            system_metrics = wandb.Api().run("chengliang/ICT-3104/{0}".format(wandbrun.id)).history()
+            print("SYSTEM METRICS"+ str(system_metrics))
             system_metrics.to_csv(os.path.join(current_date_directory,r'{0}'.format(wandbrun.id))+".csv")
             prob_val, val_loss, val_map = val_step(model, gpu, dataloader['val'], epoch)
             probs.append(prob_val)

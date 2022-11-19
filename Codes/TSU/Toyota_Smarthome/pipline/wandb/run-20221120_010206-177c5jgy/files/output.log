@@ -1,0 +1,649 @@
+Random_SEED!!!: 0
+PDAN
+batch_size: 1
+cuda_avail True
+RGB mode ./CuratedExtractedFeatures
+
+100%|██████████| 536/536 [00:03<00:00, 141.80it/s]
+100%|██████████| 536/536 [00:00<00:00, 542.93it/s]
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:88: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.key_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:89: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.value_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:90: UserWarning: nn.init.kaiming_normal is now deprecated in favor of nn.init.kaiming_normal_.
+  init.kaiming_normal(self.query_conv.weight, mode='fan_out')
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\models.py:91: UserWarning: nn.init.normal is now deprecated in favor of nn.init.normal_.
+  init.normal(self.rel_t, 0, 1)
+you are processing PDAN
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='none' instead.
+  warnings.warn(warning.format(ret))
+loaded ./PreTrainedModel/PDAN_TSU_RGB
+pytorch_total_params 5804083
+num_channel: 512 input_channnel: 1024 num_classes: 51
+0.0002
+Epoch 0/2
+----------
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+train-map: tensor(9.1917)
+SYSTEM METRICS   _step      loss   _runtime  accuracy    _timestamp
+0      0  2.516155  81.198972  9.191734  1.668877e+09
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+val-map: tensor(16.1319)
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+tensor([1.1825e+01, 3.4855e+01, 1.2071e+01, 2.3929e+01, 4.9908e+00, 1.8596e+01,
+        1.8954e+00, 1.4821e+01, 1.1304e+01, 4.8754e+00, 3.6763e+00, 1.5271e+00,
+        3.0348e+00, 1.1417e+01, 8.8608e+00, 3.2354e+00, 2.3355e+00, 2.4291e+01,
+        2.2741e+00, 5.4444e+01, 4.7396e+00, 2.7444e+01, 4.6401e+01, 3.6600e+00,
+        2.1399e-01, 2.4320e+01, 2.8573e+01, 1.3553e+01, 2.0174e+01, 2.3915e+00,
+        1.1522e+00, 1.3585e-02, 1.7871e+01, 9.6814e-01, 4.2309e+01, 7.6712e+01,
+        1.4331e+01, 4.7170e+00, 9.4359e+00, 9.5857e-01, 3.7444e+01, 6.1609e+00,
+        2.3646e+01, 6.6449e+01, 5.5656e-01, 3.1054e+01, 2.6406e+01, 2.3906e+01,
+        1.1646e+01, 1.1516e+00, 1.0800e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
+save here: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\weight_epoch_0.0002_0
+Epoch 1/2
+----------
+train-map: tensor(14.0697)
+SYSTEM METRICS   _step      loss    _runtime   accuracy    _timestamp
+0      0  2.516155   81.198972   9.191734  1.668877e+09
+1      1  2.218009  165.215975  14.069692  1.668877e+09
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+val-map: tensor(19.0361)
+tensor([1.4485e+01, 3.7644e+01, 2.0593e+01, 2.7412e+01, 1.0774e+01, 2.4957e+01,
+        2.9015e+00, 1.8770e+01, 1.5034e+01, 6.2073e+00, 4.3996e+00, 2.0586e+00,
+        2.4498e+00, 1.2634e+01, 1.8049e+01, 4.1710e+00, 2.5295e+00, 3.2082e+01,
+        3.2122e+00, 6.7931e+01, 7.2793e+00, 3.7773e+01, 4.6399e+01, 4.6916e+00,
+        2.4935e-01, 2.7367e+01, 2.7361e+01, 2.3829e+01, 2.5918e+01, 3.7321e+00,
+        1.8479e+00, 9.8110e-03, 2.2773e+01, 1.2402e+00, 2.9724e+01, 7.5669e+01,
+        1.3410e+01, 5.1156e+00, 1.1889e+01, 4.3958e+00, 4.6185e+01, 6.2033e+00,
+        2.4330e+01, 6.5076e+01, 2.9770e+00, 5.0397e+01, 3.7665e+01, 2.8632e+01,
+        8.9698e+00, 1.3302e+00, 1.0728e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
+save here: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\weight_epoch_0.0002_1
+Epoch 2/2
+----------
+train-map: tensor(19.2994)
+SYSTEM METRICS   _step      loss    _runtime   accuracy    _timestamp
+0      0  2.516155   81.198972   9.191734  1.668877e+09
+1      1  2.218009  165.215975  14.069692  1.668877e+09
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\functional.py:1709: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+c:\Users\user\AppData\Local\Programs\Python\Python36\lib\site-packages\torch\nn\_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:108: UserWarning: torch.range is deprecated and will be removed in a future release because its behavior is inconsistent with Python's range builtin. Instead, use torch.arange, which produces values in [start, end).
+  rg = torch.range(1, self.scores.size(0)).float()
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\apmeter.py:137: UserWarning: indexing with dtype torch.uint8 is now deprecated, please use a dtype torch.bool instead. (Triggered internally at  ..\aten\src\ATen/native/IndexingUtils.h:30.)
+  ap[k] = precision[truth.byte()].sum() / max(truth.sum(), 1)
+val-map: tensor(20.4542)
+tensor([1.9874e+01, 4.0690e+01, 2.6711e+01, 2.4236e+01, 8.0835e+00, 2.8444e+01,
+        2.5221e+00, 1.9041e+01, 1.7086e+01, 5.5280e+00, 4.0222e+00, 2.5426e+00,
+        1.0147e+00, 1.3290e+01, 1.4403e+01, 7.0201e+00, 3.2401e+00, 4.1860e+01,
+        4.3711e+00, 6.2691e+01, 9.7292e+00, 3.4107e+01, 5.4480e+01, 4.9330e+00,
+        2.7953e-01, 3.1824e+01, 2.8337e+01, 1.6621e+01, 2.6896e+01, 4.4313e+00,
+        2.1467e+00, 1.0166e-02, 2.4131e+01, 1.2290e+00, 4.2371e+01, 8.4518e+01,
+        1.5099e+01, 7.4379e+00, 1.2406e+01, 5.3242e+00, 5.0168e+01, 1.1025e+01,
+        2.9983e+01, 6.8258e+01, 6.1794e-01, 4.9108e+01, 4.3837e+01, 2.6862e+01,
+        8.8340e+00, 1.3735e+00, 1.1851e-01])
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\
+save here: c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\poop\weight_epoch_0.0002_2
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.19.5)
+Requirement already satisfied: opencv-python in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (4.6.0.66)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/lts/1.8/cu111
+Requirement already satisfied: torch==1.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.8.2+cu111)
+Requirement already satisfied: torchvision==0.9.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.9.2+cu111)
+Requirement already satisfied: torchaudio===0.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.8.2)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (0.8)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (1.19.5)
+Requirement already satisfied: pillow>=4.1.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torchvision==0.9.2) (8.4.0)
+Requirement already satisfied: ipywidgets in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (7.7.2)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (7.16.3)
+Requirement already satisfied: jupyterlab-widgets<3,>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (1.1.1)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (0.2.0)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (3.6.1)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (5.5.6)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (4.3.3)
+Requirement already satisfied: tornado>=4.2 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (6.1)
+Requirement already satisfied: jupyter-client in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (7.1.2)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (3.0.31)
+Requirement already satisfied: setuptools>=18.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (40.6.2)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.4.5)
+Requirement already satisfied: decorator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (4.4.2)
+Requirement already satisfied: backcall in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.2.0)
+Requirement already satisfied: jedi<=0.17.2,>=0.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.17.2)
+Requirement already satisfied: pickleshare in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.7.5)
+Requirement already satisfied: pygments in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (2.13.0)
+Requirement already satisfied: six in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from traitlets>=4.3.1->ipywidgets) (1.16.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from widgetsnbextension~=3.6.0->ipywidgets) (6.4.10)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jedi<=0.17.2,>=0.10->ipython>=4.0.0->ipywidgets) (0.7.1)
+Requirement already satisfied: jupyter-core>=4.6.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.9.2)
+Requirement already satisfied: jinja2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.3)
+Requirement already satisfied: nbformat in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (5.1.3)
+Requirement already satisfied: pyzmq>=17 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (24.0.1)
+Requirement already satisfied: nbconvert>=5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (6.0.7)
+Requirement already satisfied: nest-asyncio>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.6)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.12.1)
+Requirement already satisfied: prometheus-client in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.15.0)
+Requirement already satisfied: argon2-cffi in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3.0)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.8.0)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (2.8.2)
+Requirement already satisfied: entrypoints in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (0.4)
+Requirement already satisfied: wcwidth in c:\users\user\appdata\roaming\python\python36\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets) (0.2.5)
+Requirement already satisfied: pywin32>=1.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-core>=4.6.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (304)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.0)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8.4)
+Requirement already satisfied: defusedxml in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.7.1)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.9)
+Requirement already satisfied: testpath in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.6.0)
+Requirement already satisfied: bleach in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.0)
+Requirement already satisfied: jupyterlab-pygments in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.1.2)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.0.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.2.0)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from terminado>=0.8.3->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.1.6)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.2.0)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (22.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.18.0)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.8.3)
+Requirement already satisfied: async-generator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.10)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.15.1)
+Requirement already satisfied: webencodings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.1)
+Requirement already satisfied: packaging in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3)
+Requirement already satisfied: pycparser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.21)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.6.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from packaging->bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.9)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.19.5)
+Requirement already satisfied: opencv-python in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (4.6.0.66)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/lts/1.8/cu111
+Requirement already satisfied: torch==1.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.8.2+cu111)
+Requirement already satisfied: torchvision==0.9.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.9.2+cu111)
+Requirement already satisfied: torchaudio===0.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.8.2)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (1.19.5)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (0.8)
+Requirement already satisfied: pillow>=4.1.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torchvision==0.9.2) (8.4.0)
+Requirement already satisfied: ipywidgets in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (7.7.2)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (3.6.1)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (0.2.0)
+Requirement already satisfied: jupyterlab-widgets<3,>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (1.1.1)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (4.3.3)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (7.16.3)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (5.5.6)
+Requirement already satisfied: tornado>=4.2 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (6.1)
+Requirement already satisfied: jupyter-client in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (7.1.2)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (3.0.31)
+Requirement already satisfied: pygments in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (2.13.0)
+Requirement already satisfied: pickleshare in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.7.5)
+Requirement already satisfied: backcall in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.2.0)
+Requirement already satisfied: jedi<=0.17.2,>=0.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.17.2)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.4.5)
+Requirement already satisfied: decorator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (4.4.2)
+Requirement already satisfied: setuptools>=18.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (40.6.2)
+Requirement already satisfied: six in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from traitlets>=4.3.1->ipywidgets) (1.16.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from widgetsnbextension~=3.6.0->ipywidgets) (6.4.10)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jedi<=0.17.2,>=0.10->ipython>=4.0.0->ipywidgets) (0.7.1)
+Requirement already satisfied: nbformat in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (5.1.3)
+Requirement already satisfied: nest-asyncio>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.6)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.12.1)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.8.0)
+Requirement already satisfied: jupyter-core>=4.6.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.9.2)
+Requirement already satisfied: argon2-cffi in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3.0)
+Requirement already satisfied: prometheus-client in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.15.0)
+Requirement already satisfied: pyzmq>=17 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (24.0.1)
+Requirement already satisfied: nbconvert>=5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (6.0.7)
+Requirement already satisfied: jinja2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.3)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (2.8.2)
+Requirement already satisfied: entrypoints in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (0.4)
+Requirement already satisfied: wcwidth in c:\users\user\appdata\roaming\python\python36\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets) (0.2.5)
+Requirement already satisfied: pywin32>=1.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-core>=4.6.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (304)
+Requirement already satisfied: defusedxml in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.7.1)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.9)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8.4)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.0)
+Requirement already satisfied: bleach in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.0)
+Requirement already satisfied: jupyterlab-pygments in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.1.2)
+Requirement already satisfied: testpath in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.6.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.0.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.2.0)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from terminado>=0.8.3->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.1.6)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.2.0)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.8.3)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (22.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.18.0)
+Requirement already satisfied: async-generator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.10)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.15.1)
+Requirement already satisfied: packaging in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3)
+Requirement already satisfied: webencodings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.1)
+Requirement already satisfied: pycparser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.21)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.6.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from packaging->bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.9)
+Requirement already satisfied: ipyfilechooser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.6.0)
+Requirement already satisfied: ipywidgets in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipyfilechooser) (7.7.2)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets->ipyfilechooser) (3.6.1)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets->ipyfilechooser) (7.16.3)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets->ipyfilechooser) (0.2.0)
+Requirement already satisfied: jupyterlab-widgets<3,>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets->ipyfilechooser) (1.1.1)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets->ipyfilechooser) (4.3.3)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets->ipyfilechooser) (5.5.6)
+Requirement already satisfied: tornado>=4.2 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets->ipyfilechooser) (6.1)
+Requirement already satisfied: jupyter-client in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets->ipyfilechooser) (7.1.2)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.4.5)
+Requirement already satisfied: decorator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (4.4.2)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (3.0.31)
+Requirement already satisfied: backcall in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.2.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (40.6.2)
+Requirement already satisfied: jedi<=0.17.2,>=0.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.17.2)
+Requirement already satisfied: pickleshare in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.7.5)
+Requirement already satisfied: pygments in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets->ipyfilechooser) (2.13.0)
+Requirement already satisfied: six in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from traitlets>=4.3.1->ipywidgets->ipyfilechooser) (1.16.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (6.4.10)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jedi<=0.17.2,>=0.10->ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.7.1)
+Requirement already satisfied: nbconvert>=5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (6.0.7)
+Requirement already satisfied: prometheus-client in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.15.0)
+Requirement already satisfied: jinja2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (3.0.3)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.12.1)
+Requirement already satisfied: nest-asyncio>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.5.6)
+Requirement already satisfied: argon2-cffi in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (21.3.0)
+Requirement already satisfied: jupyter-core>=4.6.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (4.9.2)
+Requirement already satisfied: nbformat in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (5.1.3)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.8.0)
+Requirement already satisfied: pyzmq>=17 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (24.0.1)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets->ipyfilechooser) (2.8.2)
+Requirement already satisfied: entrypoints in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets->ipyfilechooser) (0.4)
+Requirement already satisfied: wcwidth in c:\users\user\appdata\roaming\python\python36\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets->ipyfilechooser) (0.2.5)
+Requirement already satisfied: pywin32>=1.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-core>=4.6.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (304)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.8.4)
+Requirement already satisfied: bleach in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (4.1.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.5.0)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.5.9)
+Requirement already satisfied: testpath in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.6.0)
+Requirement already satisfied: defusedxml in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.7.1)
+Requirement already satisfied: jupyterlab-pygments in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.1.2)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (2.0.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (3.2.0)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from terminado>=0.8.3->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.1.6)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (4.1.1)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (21.2.0)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.8)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.18.0)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (4.8.3)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (22.1.0)
+Requirement already satisfied: async-generator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.10)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (1.15.1)
+Requirement already satisfied: packaging in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (21.3)
+Requirement already satisfied: webencodings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (0.5.1)
+Requirement already satisfied: pycparser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (2.21)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (3.6.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from packaging->bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets->ipyfilechooser) (3.0.9)
+Requirement already satisfied: wandb in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.13.5)
+Requirement already satisfied: shortuuid>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (1.0.10)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (8.0.4)
+Requirement already satisfied: GitPython>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (3.1.18)
+Requirement already satisfied: sentry-sdk>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (1.10.1)
+Requirement already satisfied: docker-pycreds>=0.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (0.4.0)
+Requirement already satisfied: requests<3,>=2.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (2.27.1)
+Requirement already satisfied: protobuf!=4.0.*,!=4.21.0,<5,>=3.12.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (3.19.6)
+Requirement already satisfied: PyYAML in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (6.0)
+Requirement already satisfied: pathtools in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (0.1.2)
+Requirement already satisfied: promise<3,>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (2.3)
+Requirement already satisfied: setproctitle in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (1.2.3)
+Requirement already satisfied: setuptools in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (40.6.2)
+Requirement already satisfied: six>=1.13.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (1.16.0)
+Requirement already satisfied: psutil>=5.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (5.9.4)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from wandb) (0.8)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from Click!=8.0.0,>=7.0->wandb) (4.8.3)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from Click!=8.0.0,>=7.0->wandb) (0.4.5)
+Requirement already satisfied: typing-extensions>=3.7.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from GitPython>=1.0.0->wandb) (4.1.1)
+Requirement already satisfied: gitdb<5,>=4.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from GitPython>=1.0.0->wandb) (4.0.9)
+Requirement already satisfied: certifi>=2017.4.17 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from requests<3,>=2.0.0->wandb) (2022.9.24)
+Requirement already satisfied: idna<4,>=2.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from requests<3,>=2.0.0->wandb) (3.4)
+Requirement already satisfied: charset-normalizer~=2.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from requests<3,>=2.0.0->wandb) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from requests<3,>=2.0.0->wandb) (1.26.12)
+Requirement already satisfied: smmap<6,>=3.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb) (5.0.0)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->Click!=8.0.0,>=7.0->wandb) (3.6.0)
+wandb: Appending key for api.wandb.ai to your netrc file: C:\Users\user/.netrc
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.19.5)
+Requirement already satisfied: opencv-python in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (4.6.0.66)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/lts/1.8/cu111
+Requirement already satisfied: torch==1.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.8.2+cu111)
+Requirement already satisfied: torchvision==0.9.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.9.2+cu111)
+Requirement already satisfied: torchaudio===0.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.8.2)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (0.8)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (1.19.5)
+Requirement already satisfied: pillow>=4.1.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torchvision==0.9.2) (8.4.0)
+Requirement already satisfied: ipywidgets in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (7.7.2)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (4.3.3)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (5.5.6)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (0.2.0)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (3.6.1)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (7.16.3)
+Requirement already satisfied: jupyterlab-widgets<3,>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (1.1.1)
+Requirement already satisfied: tornado>=4.2 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (6.1)
+Requirement already satisfied: jupyter-client in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (7.1.2)
+Requirement already satisfied: decorator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (4.4.2)
+Requirement already satisfied: pygments in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (2.13.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (40.6.2)
+Requirement already satisfied: jedi<=0.17.2,>=0.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.17.2)
+Requirement already satisfied: backcall in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.2.0)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.4.5)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (3.0.31)
+Requirement already satisfied: pickleshare in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.7.5)
+Requirement already satisfied: six in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from traitlets>=4.3.1->ipywidgets) (1.16.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from widgetsnbextension~=3.6.0->ipywidgets) (6.4.10)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jedi<=0.17.2,>=0.10->ipython>=4.0.0->ipywidgets) (0.7.1)
+Requirement already satisfied: pyzmq>=17 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (24.0.1)
+Requirement already satisfied: jupyter-core>=4.6.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.9.2)
+Requirement already satisfied: prometheus-client in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.15.0)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.8.0)
+Requirement already satisfied: nbconvert>=5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (6.0.7)
+Requirement already satisfied: nest-asyncio>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.6)
+Requirement already satisfied: jinja2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.3)
+Requirement already satisfied: nbformat in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (5.1.3)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.12.1)
+Requirement already satisfied: argon2-cffi in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3.0)
+Requirement already satisfied: entrypoints in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (0.4)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (2.8.2)
+Requirement already satisfied: wcwidth in c:\users\user\appdata\roaming\python\python36\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets) (0.2.5)
+Requirement already satisfied: pywin32>=1.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-core>=4.6.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (304)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.9)
+Requirement already satisfied: jupyterlab-pygments in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.1.2)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8.4)
+Requirement already satisfied: bleach in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.0)
+Requirement already satisfied: testpath in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.6.0)
+Requirement already satisfied: defusedxml in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.7.1)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.0.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.2.0)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from terminado>=0.8.3->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.1.6)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.1)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.2.0)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.8.3)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (22.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.18.0)
+Requirement already satisfied: async-generator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.10)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.15.1)
+Requirement already satisfied: packaging in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3)
+Requirement already satisfied: webencodings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.1)
+Requirement already satisfied: pycparser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.21)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.6.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from packaging->bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.9)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.19.5)
+Requirement already satisfied: opencv-python in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (4.6.0.66)
+Looking in indexes: https://pypi.org/simple, https://download.pytorch.org/whl/lts/1.8/cu111
+Requirement already satisfied: torch==1.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (1.8.2+cu111)
+Requirement already satisfied: torchvision==0.9.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.9.2+cu111)
+Requirement already satisfied: torchaudio===0.8.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (0.8.2)
+Requirement already satisfied: numpy in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (1.19.5)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (0.8)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torch==1.8.2) (4.1.1)
+Requirement already satisfied: pillow>=4.1.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from torchvision==0.9.2) (8.4.0)
+Requirement already satisfied: ipywidgets in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (7.7.2)
+Requirement already satisfied: ipython-genutils~=0.2.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (0.2.0)
+Requirement already satisfied: traitlets>=4.3.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (4.3.3)
+Requirement already satisfied: ipython>=4.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (7.16.3)
+Requirement already satisfied: jupyterlab-widgets<3,>=1.0.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (1.1.1)
+Requirement already satisfied: ipykernel>=4.5.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipywidgets) (5.5.6)
+Requirement already satisfied: widgetsnbextension~=3.6.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipywidgets) (3.6.1)
+Requirement already satisfied: jupyter-client in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (7.1.2)
+Requirement already satisfied: tornado>=4.2 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipykernel>=4.5.1->ipywidgets) (6.1)
+Requirement already satisfied: decorator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (4.4.2)
+Requirement already satisfied: backcall in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.2.0)
+Requirement already satisfied: setuptools>=18.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from ipython>=4.0.0->ipywidgets) (40.6.2)
+Requirement already satisfied: pygments in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (2.13.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (3.0.31)
+Requirement already satisfied: colorama in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.4.5)
+Requirement already satisfied: pickleshare in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.7.5)
+Requirement already satisfied: jedi<=0.17.2,>=0.10 in c:\users\user\appdata\roaming\python\python36\site-packages (from ipython>=4.0.0->ipywidgets) (0.17.2)
+Requirement already satisfied: six in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from traitlets>=4.3.1->ipywidgets) (1.16.0)
+Requirement already satisfied: notebook>=4.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from widgetsnbextension~=3.6.0->ipywidgets) (6.4.10)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jedi<=0.17.2,>=0.10->ipython>=4.0.0->ipywidgets) (0.7.1)
+Requirement already satisfied: nbformat in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (5.1.3)
+Requirement already satisfied: argon2-cffi in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3.0)
+Requirement already satisfied: nbconvert>=5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (6.0.7)
+Requirement already satisfied: terminado>=0.8.3 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.12.1)
+Requirement already satisfied: jupyter-core>=4.6.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.9.2)
+Requirement already satisfied: jinja2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.3)
+Requirement already satisfied: Send2Trash>=1.8.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.8.0)
+Requirement already satisfied: prometheus-client in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.15.0)
+Requirement already satisfied: nest-asyncio>=1.5 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.6)
+Requirement already satisfied: pyzmq>=17 in c:\users\user\appdata\roaming\python\python36\site-packages (from notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (24.0.1)
+Requirement already satisfied: entrypoints in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (0.4)
+Requirement already satisfied: python-dateutil>=2.1 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-client->ipykernel>=4.5.1->ipywidgets) (2.8.2)
+Requirement already satisfied: wcwidth in c:\users\user\appdata\roaming\python\python36\site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=4.0.0->ipywidgets) (0.2.5)
+Requirement already satisfied: pywin32>=1.0 in c:\users\user\appdata\roaming\python\python36\site-packages (from jupyter-core>=4.6.1->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (304)
+Requirement already satisfied: bleach in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.0)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.9)
+Requirement already satisfied: jupyterlab-pygments in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.1.2)
+Requirement already satisfied: defusedxml in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.7.1)
+Requirement already satisfied: mistune<2,>=0.8.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8.4)
+Requirement already satisfied: pandocfilters>=1.4.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.5.0)
+Requirement already satisfied: testpath in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.6.0)
+Requirement already satisfied: MarkupSafe>=2.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.0.1)
+Requirement already satisfied: jsonschema!=2.5.0,>=2.4 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.2.0)
+Requirement already satisfied: pywinpty>=1.1.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from terminado>=0.8.3->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.1.6)
+Requirement already satisfied: argon2-cffi-bindings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.2.0)
+Requirement already satisfied: typing-extensions in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.1.1)
+Requirement already satisfied: dataclasses in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.8)
+Requirement already satisfied: pyrsistent>=0.14.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.18.0)
+Requirement already satisfied: attrs>=17.4.0 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (22.1.0)
+Requirement already satisfied: importlib-metadata in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (4.8.3)
+Requirement already satisfied: async-generator in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.10)
+Requirement already satisfied: cffi>=1.0.1 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (1.15.1)
+Requirement already satisfied: packaging in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (21.3)
+Requirement already satisfied: webencodings in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (0.5.1)
+Requirement already satisfied: pycparser in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from cffi>=1.0.1->argon2-cffi-bindings->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (2.21)
+Requirement already satisfied: zipp>=0.5 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from importlib-metadata->jsonschema!=2.5.0,>=2.4->nbformat->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.6.0)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\user\appdata\local\programs\python\python36\lib\site-packages (from packaging->bleach->nbconvert>=5->notebook>=4.4.1->widgetsnbextension~=3.6.0->ipywidgets) (3.0.9)
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\172a9c9n.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1nlbwmpo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1rufd9zi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\232l3hgv.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\246q0hof.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\262j98gm.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2952dtgf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29mo14u8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29n5z7ra.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2au02e56.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2bu79xul.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2gxh082q.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hsntj1c.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hymtact.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2j75i6e0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2lmabmpt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2rvkpg9k.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2t2xvwgc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\32f844lk.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\33k9ywxt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\34297evp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\35rubxq4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\382qucy9.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3aa7eddt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3eni52mp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3ffkkbqa.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3gz2s1m4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3i0ifjjo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jbitcxf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jgpis82.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3m5ul977.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3v4uz5hj.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\67iyamv0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\8zky9mhi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\ee9qu5ko.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f1pht3ao.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f4up7bpc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\lfpiuf41.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or3ytv2d.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or41yrf8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\t20oortc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\waeu4v12.csv']
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\172a9c9n.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1nlbwmpo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1rufd9zi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\232l3hgv.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\246q0hof.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\262j98gm.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2952dtgf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29mo14u8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29n5z7ra.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2au02e56.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2bu79xul.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2gxh082q.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hsntj1c.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hymtact.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2j75i6e0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2lmabmpt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2rvkpg9k.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2t2xvwgc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\32f844lk.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\33k9ywxt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\34297evp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\35rubxq4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\382qucy9.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3aa7eddt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3eni52mp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3ffkkbqa.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3gz2s1m4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3i0ifjjo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jbitcxf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jgpis82.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3m5ul977.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3v4uz5hj.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\67iyamv0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\8zky9mhi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\ee9qu5ko.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f1pht3ao.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f4up7bpc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\lfpiuf41.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or3ytv2d.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or41yrf8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\t20oortc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\waeu4v12.csv']
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\172a9c9n.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1nlbwmpo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1rufd9zi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\232l3hgv.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\246q0hof.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\262j98gm.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2952dtgf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29mo14u8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\29n5z7ra.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2au02e56.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2bu79xul.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2gxh082q.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hsntj1c.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hymtact.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2j75i6e0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2lmabmpt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2rvkpg9k.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2t2xvwgc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\32f844lk.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\33k9ywxt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\34297evp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\35rubxq4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\382qucy9.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3aa7eddt.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3eni52mp.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3ffkkbqa.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3gz2s1m4.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3i0ifjjo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jbitcxf.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3jgpis82.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3m5ul977.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\3v4uz5hj.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\67iyamv0.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\8zky9mhi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\ee9qu5ko.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f1pht3ao.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\f4up7bpc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\lfpiuf41.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or3ytv2d.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\or41yrf8.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\t20oortc.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\waeu4v12.csv']
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv']
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1nlbwmpo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1rufd9zi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hsntj1c.csv']
+['c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\177c5jgy.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1nlbwmpo.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\1rufd9zi.csv', 'c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\wandb_result\\20221120\\2hsntj1c.csv']
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120\177c5jgy.csv
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120\177c5jgy.csv
+Empty DataFrame
+Columns: []
+Index: []
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+Empty DataFrame
+Columns: []
+Index: []
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+Empty DataFrame
+Columns: []
+Index: []
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+Empty DataFrame
+Columns: []
+Index: []
+177c5jgy.csv
+Empty DataFrame
+Columns: []
+Index: []
+1nlbwmpo.csv
+1rufd9zi.csv
+2hsntj1c.csv
+Empty DataFrame
+Columns: []
+Index: []
+Empty DataFrame
+Columns: []
+Index: []
+Error in reading csv file
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Error in reading csv file
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Error in reading csv file
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Error in reading csv file
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+wandb folder path:
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+wandb folder path:
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+c:\Users\user\Documents\GitHub\ict3104-team09-2022-binder\Codes\TSU\Toyota_Smarthome\pipline\wandb_result\20221120
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
+Index: []
+   Unnamed: 0  _step      loss    _runtime   accuracy    _timestamp
+0           0      0  2.516155   81.198972   9.191734  1.668877e+09
+1           1      1  2.218009  165.215975  14.069692  1.668877e+09
+Empty DataFrame
+Columns: [Unnamed: 0]
