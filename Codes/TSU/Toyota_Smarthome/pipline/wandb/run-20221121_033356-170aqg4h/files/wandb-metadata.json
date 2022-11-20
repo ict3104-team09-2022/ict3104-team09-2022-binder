@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.6.8",
+    "heartbeatAt": "2022-11-20T19:33:57.497859",
+    "startedAt": "2022-11-20T19:33:56.369859",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "c:\\Users\\user\\Documents\\GitHub\\ict3104-team09-2022-binder\\Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py",
+    "codePath": "Codes\\TSU\\Toyota_Smarthome\\pipline\\train.py",
+    "git": {
+        "remote": "https://github.com/ict3104-team09-2022/ict3104-team09-2022-binder.git",
+        "commit": "b1a6090d07147150c39b2fd01382147706e11b60"
+    },
+    "email": "68848568+zhenxuan98@users.noreply.github.com",
+    "root": "C:/Users/user/Documents/GitHub/ict3104-team09-2022-binder",
+    "host": "DESKTOP-JM416HJ",
+    "username": "user",
+    "executable": "c:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python36\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2500.0,
+        "min": 0.0,
+        "max": 2500.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2500.0,
+            "min": 0.0,
+            "max": 2500.0
+        }
+    ],
+    "disk": {
+        "total": 953.2561683654785,
+        "used": 649.7354888916016
+    },
+    "gpu": "NVIDIA GeForce RTX 2070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.792839050292969
+    }
+}
