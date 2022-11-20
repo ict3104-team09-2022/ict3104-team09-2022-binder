@@ -1,0 +1,11 @@
+event,start_frame,end_frame
+Take_something_off_table,1018,1038
+Put_something_on_table,9752,9791
+Put_something_on_table,10224,10258
+Take_something_off_table,12905,12955
+Get_up,12986,13014
+Take_something_off_table,13081,13109
+Walk,13255,13300
+Leave,13278,13307
+Enter,13350,13372
+Walk,13356,13384

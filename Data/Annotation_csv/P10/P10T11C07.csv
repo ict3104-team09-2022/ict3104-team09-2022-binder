@@ -1,0 +1,15 @@
+event,start_frame,end_frame
+Enter,207,251
+Walk,229,269
+Walk,5372,5484
+Use_Drawer,5992,6418
+Walk,9981,10014
+Leave,10003,10025
+Enter,10227,10258
+Walk,10235,10270
+Use_telephone,16549,16631
+Walk,17378,17433
+Leave,17408,17444
+Enter,18073,18101
+Walk,18080,18123
+Use_telephone,27878,27950

@@ -1,0 +1,5 @@
+event,start_frame,end_frame
+Walk,614,696
+Put_something_on_table,693,705
+Write,700,13375
+Walk,13588,13637

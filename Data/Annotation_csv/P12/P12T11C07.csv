@@ -1,0 +1,8 @@
+event,start_frame,end_frame
+Use_Drawer,11188,12511
+Use_Drawer,16154,17106
+Put_something_on_table,17356,17383
+Use_Drawer,17540,17605
+Take_something_off_table,29115,29139
+Walk,32672,32714
+Walk,32823,32869
